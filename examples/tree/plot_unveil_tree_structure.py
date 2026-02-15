@@ -173,7 +173,7 @@ plt.show()
 #
 # We can also retrieve the decision path of samples of interest. The
 # ``decision_path`` method outputs an indicator matrix that allows us to
-# retrieve the nodes the samples of interest traverse through. A non zero
+# retrieve the nodes through which the samples of interest traverse. A non zero
 # element in the indicator matrix at position ``(i, j)`` indicates that
 # the sample ``i`` goes through the node ``j``. Or, for one sample ``i``, the
 # positions of the non zero elements in row ``i`` of the indicator matrix
