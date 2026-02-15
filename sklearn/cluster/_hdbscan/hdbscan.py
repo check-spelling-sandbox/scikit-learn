@@ -159,7 +159,7 @@ def _process_mst(min_spanning_tree):
     Returns
     -------
     single_linkage : ndarray of shape (n_samples - 1,), dtype=HIERARCHY_dtype
-        The single-linkage tree tree (dendrogram) built from the MST.
+        The single-linkage tree (dendrogram) built from the MST.
     """
     # Sort edges of the min_spanning_tree by weight
     row_order = np.argsort(min_spanning_tree["distance"])
@@ -230,7 +230,7 @@ def _hdbscan_brute(
     Returns
     -------
     single_linkage : ndarray of shape (n_samples - 1,), dtype=HIERARCHY_dtype
-        The single-linkage tree tree (dendrogram) built from the MST.
+        The single-linkage tree (dendrogram) built from the MST.
     """
     if metric == "precomputed":
         if X.shape[0] != X.shape[1]:
@@ -336,7 +336,7 @@ def _hdbscan_prims(
     Returns
     -------
     single_linkage : ndarray of shape (n_samples - 1,), dtype=HIERARCHY_dtype
-        The single-linkage tree tree (dendrogram) built from the MST.
+        The single-linkage tree (dendrogram) built from the MST.
     """
     # The Cython routines used require contiguous arrays
     X = np.asarray(X, order="C")
@@ -371,7 +371,7 @@ def remap_single_linkage_tree(tree, internal_to_raw, non_finite):
     Parameters
     ----------
     tree : ndarray of shape (n_samples - 1,), dtype=HIERARCHY_dtype
-        The single-linkage tree tree (dendrogram) built from the MST.
+        The single-linkage tree (dendrogram) built from the MST.
     internal_to_raw: dict
         A mapping from internal integer index to the raw integer index
     non_finite : ndarray
