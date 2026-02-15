@@ -69,7 +69,7 @@ class SplitInfo:
         the split.
     missing_go_to_left : bool
         Whether missing values should go to the left child. This is used
-        whether the split is categorical or not.
+        whether or not the split is categorical.
     sum_gradient_left : float
         The sum of the gradients of all the samples in the left child.
     sum_hessian_left : float

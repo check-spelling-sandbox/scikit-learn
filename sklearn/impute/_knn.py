@@ -300,7 +300,7 @@ class KNNImputer(_BaseImputer):
             # Even if there are no missing values in X, we still concatenate Xc
             # with the missing value indicator matrix, X_indicator.
             # This is to ensure that the output maintains consistency in terms
-            # of columns, regardless of whether missing values exist in X or not.
+            # of columns, regardless of whether or not missing values exist in X.
             return super()._concatenate_indicator(Xc, X_indicator)
 
         row_missing_idx = np.flatnonzero(mask[:, valid_mask].any(axis=1))

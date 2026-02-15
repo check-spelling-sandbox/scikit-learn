@@ -62,7 +62,7 @@ def _grid_from_X(X, percentiles, is_categorical, grid_resolution, custom_values)
         the grid. Must be in [0, 1].
 
     is_categorical : list of bool
-        For each feature, tells whether it is categorical or not. If a feature
+        For each feature, tells whether or not it is categorical. If a feature
         is categorical, then the values used will be the unique ones
         (i.e. categories) instead of the percentiles.
 

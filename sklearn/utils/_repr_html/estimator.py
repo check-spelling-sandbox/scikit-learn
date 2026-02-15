@@ -298,7 +298,7 @@ def _write_estimator_html(
         It can contain information as non-default parameters or column information for
         `ColumnTransformer`.
     is_fitted_css_class : {"", "fitted"}
-        The CSS class to indicate whether or not the estimator is fitted or not. The
+        The CSS class to indicate whether or not the estimator is fitted. The
         empty string means that the estimator is not fitted and "fitted" means that the
         estimator is fitted.
     is_fitted_icon : str, default=""

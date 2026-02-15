@@ -4,7 +4,7 @@
 ========================================
 
 The `__sklearn_is_fitted__` method is a convention used in scikit-learn for
-checking whether an estimator object has been fitted or not. This method is
+checking whether or not an estimator object has been fitted. This method is
 typically implemented in custom estimator classes that are built on top of
 scikit-learn's base classes like `BaseEstimator` or its subclasses.
 
