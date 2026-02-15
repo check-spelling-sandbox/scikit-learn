@@ -1289,7 +1289,7 @@ def paired_cosine_distances(X, Y):
 
     Notes
     -----
-    The cosine distance is equivalent to the half the squared
+    The cosine distance is equivalent to half the squared
     euclidean distance if each sample is normalized to unit norm.
 
     Examples
