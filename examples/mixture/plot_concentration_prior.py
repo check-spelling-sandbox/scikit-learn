@@ -23,7 +23,7 @@ The Dirichlet process prior allows to define an infinite number of components
 and automatically selects the correct number of components: it activates a
 component only if it is necessary.
 
-On the contrary the classical finite mixture model with a Dirichlet
+On the contrary, the classical finite mixture model with a Dirichlet
 distribution prior will favor more uniformly weighted components and therefore
 tends to divide natural clusters into unnecessary sub-components.
 
