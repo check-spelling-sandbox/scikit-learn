@@ -375,7 +375,7 @@ class Birch(
     ----------
     threshold : float, default=0.5
         The radius of the subcluster obtained by merging a new sample and the
-        closest subcluster should be lesser than the threshold. Otherwise a new
+        closest subcluster should be less than the threshold. Otherwise a new
         subcluster is started. Setting this value to be very low promotes
         splitting and vice-versa.
 

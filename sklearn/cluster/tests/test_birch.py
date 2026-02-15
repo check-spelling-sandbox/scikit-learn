@@ -158,7 +158,7 @@ def check_threshold(birch_instance, threshold):
 
 
 def test_threshold(global_random_seed, global_dtype):
-    # Test that the leaf subclusters have a threshold lesser than radius
+    # Test that the leaf subclusters have a threshold less than radius
     X, y = make_blobs(n_samples=80, centers=4, random_state=global_random_seed)
     X = X.astype(global_dtype, copy=False)
     brc = Birch(threshold=0.5, n_clusters=None)
