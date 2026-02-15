@@ -171,7 +171,7 @@ def test_n_features_in():
 
 
 def test_dictvectorizer_dense_sparse_equivalence():
-    """Check the equivalence between between sparse and dense DictVectorizer.
+    """Check the equivalence between sparse and dense DictVectorizer.
     Non-regression test for:
     https://github.com/scikit-learn/scikit-learn/issues/19978
     """
