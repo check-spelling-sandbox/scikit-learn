@@ -11,7 +11,7 @@ Wine recognition dataset
     - Alcohol
     - Malic acid
     - Ash
-    - Alcalinity of ash
+    - Alkalinity of ash
     - Magnesium
     - Total phenols
     - Flavanoids
@@ -34,7 +34,7 @@ Wine recognition dataset
 Alcohol:                      11.0  14.8    13.0   0.8
 Malic Acid:                   0.74  5.80    2.34  1.12
 Ash:                          1.36  3.23    2.36  0.27
-Alcalinity of Ash:            10.6  30.0    19.5   3.3
+Alkalinity of Ash:            10.6  30.0    19.5   3.3
 Magnesium:                    70.0 162.0    99.7  14.3
 Total Phenols:                0.98  3.88    2.29  0.63
 Flavanoids:                   0.34  5.08    2.03  1.00
