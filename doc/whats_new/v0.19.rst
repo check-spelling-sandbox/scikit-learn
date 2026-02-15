@@ -994,7 +994,7 @@ Miscellaneous
 - All checks in ``utils.estimator_checks``, in particular
   :func:`utils.estimator_checks.check_estimator` now accept estimator
   instances. Most other checks do not accept
-  estimator classes any more. :issue:`9019` by `Andreas Müller`_.
+  estimator classes anymore. :issue:`9019` by `Andreas Müller`_.
 
 - Ensure that estimators' attributes ending with ``_`` are not set
   in the constructor but only in the ``fit`` method. Most notably,

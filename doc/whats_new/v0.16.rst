@@ -421,7 +421,7 @@ API changes summary
 
 - `GridSearchCV` and
   `cross_val_score` and other
-  meta-estimators don't convert pandas DataFrames into arrays any more,
+  meta-estimators don't convert pandas DataFrames into arrays anymore,
   allowing DataFrame specific operations in custom estimators.
 
 - `multiclass.fit_ovr`, `multiclass.predict_ovr`,

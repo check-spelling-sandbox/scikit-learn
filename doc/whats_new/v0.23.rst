@@ -141,7 +141,7 @@ Changelog
 ......................
 
 - |Efficiency| :class:`cluster.KMeans` efficiency has been improved for very
-  small datasets. In particular it cannot spawn idle threads any more.
+  small datasets. In particular it cannot spawn idle threads anymore.
   :pr:`17210` and :pr:`17235` by :user:`Jeremie du Boisberranger <jeremiedbb>`.
 
 - |Fix| Fixed a bug in :class:`cluster.KMeans` where the sample weights
