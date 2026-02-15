@@ -1970,14 +1970,14 @@ def test_ordinal_encoder_encoded_missing_value_error(with_pandas):
     [
         (
             # missing value is not in training set
-            # inverse transform will considering encoded nan as unknown
+            # inverse transform will consider encoded nan as unknown
             np.array([["a"], ["1"]], dtype=object),
             [[0], [np.nan], [np.nan]],
             np.asarray([["1"], [None], [None]], dtype=object),
         ),
         (
             # missing value in training set,
-            # inverse transform will considering encoded nan as missing
+            # inverse transform will consider encoded nan as missing
             np.array([[np.nan], ["1"], ["a"]], dtype=object),
             [[0], [np.nan], [np.nan]],
             np.asarray([["1"], [np.nan], [np.nan]], dtype=object),
