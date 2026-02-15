@@ -27,7 +27,7 @@ def get_working_memory():
 @pytest.mark.parametrize("n_jobs", [1, 2])
 @pytest.mark.parametrize("backend", ["loky", "threading", "multiprocessing"])
 def test_configuration_passes_through_to_joblib(n_jobs, backend):
-    # Tests that the global global configuration is passed to joblib jobs
+    # Tests that the global configuration is passed to joblib jobs
 
     with config_context(working_memory=123):
         results = Parallel(n_jobs=n_jobs, backend=backend)(
