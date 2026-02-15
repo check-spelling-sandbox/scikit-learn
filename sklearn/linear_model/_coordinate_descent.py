@@ -2621,7 +2621,7 @@ class MultiTaskElasticNet(Lasso):
         The dual gaps at the end of the optimization.
 
     eps_ : float
-        The tolerance scaled scaled by the variance of the target `y`.
+        The tolerance scaled by the variance of the target `y`.
 
     sparse_coef_ : sparse matrix of shape (n_features,) or \
             (n_targets, n_features)
@@ -2865,7 +2865,7 @@ class MultiTaskLasso(MultiTaskElasticNet):
         The dual gaps at the end of the optimization for each alpha.
 
     eps_ : float
-        The tolerance scaled scaled by the variance of the target `y`.
+        The tolerance scaled by the variance of the target `y`.
 
     sparse_coef_ : sparse matrix of shape (n_features,) or \
             (n_targets, n_features)
