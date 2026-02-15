@@ -562,7 +562,7 @@ class IsolationForest(OutlierMixin, BaseBagging):
         # Note:
         #  - this will get at least 1 row, even if 1 row of score will
         #    exceed working_memory.
-        #  - this does only account for temporary memory usage while loading
+        #  - this only accounts for temporary memory usage while loading
         #    the data needed to compute the scores -- the returned scores
         #    themselves are 1D.
 
