@@ -121,7 +121,7 @@ cdef class DensePartitioner:
             const uint8_t[::1] missing_values_in_feature_mask = self.missing_values_in_feature_mask
 
         # We are copying the values into an array and finding min/max of the array in
-        # a manner which utilizes the cache more effectively. We need to also count
+        # a manner which utilizes the cache more effectively. We also need to count
         # the number of missing-values there are.
         if missing_values_in_feature_mask is not None and missing_values_in_feature_mask[current_feature]:
             p, current_end = self.start, self.end - 1
