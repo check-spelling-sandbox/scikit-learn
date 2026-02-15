@@ -889,7 +889,7 @@ the target response?
 Individual decision trees intrinsically perform feature selection by selecting
 appropriate split points. This information can be used to measure the
 importance of each feature; the basic idea is: the more often a
-feature is used in the split points of a tree the more important that
+feature is used in the split points of a tree, the more important that
 feature is. This notion of importance can be extended to decision tree
 ensembles by simply averaging the impurity-based feature importance of each tree (see
 :ref:`random_forest_feature_importance` for more details).
