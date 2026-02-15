@@ -81,7 +81,7 @@ def get_message(log_file, repo_str, pr_number, sha, run_id, details, versions):
         return (
             "## ❌ Linting issues\n\n"
             "There was an issue running the linter job. Please update with "
-            "`upstream/main` ([link]("
+            "`upstream/main` (See [how to contribute]("
             "https://scikit-learn.org/dev/developers/contributing.html"
             "#how-to-contribute)) and push the changes. If you already have done "
             "that, please send an empty commit with `git commit --allow-empty` "
