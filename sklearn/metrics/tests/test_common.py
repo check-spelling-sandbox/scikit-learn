@@ -354,7 +354,7 @@ METRICS_WITH_AVERAGING = {
 }
 
 # Threshold-based metrics with an "average" argument
-CONTINOUS_CLASSIFICATION_METRICS_WITH_AVERAGING = {
+CONTINUOUS_CLASSIFICATION_METRICS_WITH_AVERAGING = {
     "roc_auc_score",
     "average_precision_score",
     "partial_roc_auc",
@@ -1475,7 +1475,7 @@ def check_averaging(name, y_true, y_true_binarize, y_pred, y_pred_binarize, y_sc
         _check_averaging(
             metric, y_true, y_pred, y_true_binarize, y_pred_binarize, is_multilabel
         )
-    elif name in CONTINOUS_CLASSIFICATION_METRICS_WITH_AVERAGING:
+    elif name in CONTINUOUS_CLASSIFICATION_METRICS_WITH_AVERAGING:
         _check_averaging(
             metric, y_true, y_score, y_true_binarize, y_score, is_multilabel
         )
@@ -1500,7 +1500,7 @@ def test_averaging_multiclass(name):
 
 @pytest.mark.parametrize(
     "name",
-    sorted(METRICS_WITH_AVERAGING | CONTINOUS_CLASSIFICATION_METRICS_WITH_AVERAGING),
+    sorted(METRICS_WITH_AVERAGING | CONTINUOUS_CLASSIFICATION_METRICS_WITH_AVERAGING),
 )
 def test_averaging_multilabel(name):
     n_samples, n_classes = 40, 5
