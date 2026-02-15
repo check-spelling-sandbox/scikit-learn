@@ -521,7 +521,7 @@ class Pipeline(_BaseComposition):
         # shallow copy of steps - this should really be steps_
         self.steps = list(self.steps)
         self._validate_steps()
-        # Setup the memory
+        # Set up the memory
         memory = check_memory(self.memory)
 
         fit_transform_one_cached = memory.cache(_fit_transform_one)

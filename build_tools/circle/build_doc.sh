@@ -162,7 +162,7 @@ sudo -E apt-get -yq update --allow-releaseinfo-change
 sudo -E apt-get -yq --no-install-suggests --no-install-recommends \
     install dvipng gsfonts ccache zip optipng
 
-# deactivate circleci virtualenv and setup a conda env instead
+# deactivate circleci virtualenv and set up a conda env instead
 if [[ `type -t deactivate` ]]; then
   deactivate
 fi

@@ -345,7 +345,7 @@ Building and testing for the ARM64 platform on an x86_64 machine
 ARM-based machines are a popular target for mobile, edge or other low-energy
 deployments (including in the cloud, for instance on Scaleway or AWS Graviton).
 
-Here are instructions to setup a local dev environment to reproduce
+Here are instructions to set up a local dev environment to reproduce
 ARM-specific bugs or test failures on an x86_64 host laptop or workstation. This
 is based on QEMU user mode emulation using docker for convenience (see
 https://github.com/multiarch/qemu-user-static).

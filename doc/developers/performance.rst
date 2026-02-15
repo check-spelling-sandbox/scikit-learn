@@ -82,7 +82,7 @@ loads and prepare you data and then use the IPython integrated profiler
 for interactively exploring the relevant part for the code.
 
 Suppose we want to profile the Non Negative Matrix Factorization module
-of scikit-learn. Let us setup a new IPython session and load the digits
+of scikit-learn. Let us set up a new IPython session and load the digits
 dataset and as in the :ref:`sphx_glr_auto_examples_classification_plot_digits_classification.py` example::
 
   In [1]: from sklearn.decomposition import NMF
@@ -249,7 +249,7 @@ install the latest version:
 
   pip install -U memory_profiler
 
-Then, setup the magics in a manner similar to ``line_profiler``.
+Then, set up the magics in a manner similar to ``line_profiler``.
 
 **Under IPython 0.11+**, first create a configuration profile:
 
