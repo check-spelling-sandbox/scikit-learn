@@ -58,7 +58,7 @@ def _sparse_data_to_array(
     arff_data: ArffSparseDataType, include_columns: List
 ) -> np.ndarray:
     # turns the sparse data back into an array (can't use toarray() function,
-    # as this does only work on numeric data)
+    # as this only works on numeric data)
     num_obs = max(arff_data[1]) + 1
     y_shape = (num_obs, len(include_columns))
     reindexed_columns = {

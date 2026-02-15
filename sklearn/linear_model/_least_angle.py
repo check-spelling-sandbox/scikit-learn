@@ -694,7 +694,7 @@ def _lars_path_solver(
                 c = nrm2(X.T[n_active]) ** 2
                 L[n_active, :n_active] = np.dot(X.T[n_active], X.T[:n_active].T)
             else:
-                # swap does only work inplace if matrix is fortran
+                # swap only works inplace if matrix is fortran
                 # contiguous ...
                 Gram[m], Gram[n] = swap(Gram[m], Gram[n])
                 Gram[:, m], Gram[:, n] = swap(Gram[:, m], Gram[:, n])
