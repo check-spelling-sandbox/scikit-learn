@@ -36,7 +36,7 @@ We adopted the following release schedule:
 
 - The release manager must be a **maintainer** of the
   https://github.com/scikit-learn/scikit-learn repository to be able to publish on
-  `pypi.org` and `test.pypi.org` (via a manual trigger of a dedicated Github Actions
+  `pypi.org` and `test.pypi.org` (via a manual trigger of a dedicated GitHub Actions
   workflow).
 
 - The release manager must be a **maintainer** of the

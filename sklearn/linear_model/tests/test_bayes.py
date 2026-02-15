@@ -214,7 +214,7 @@ def test_toy_ard_object():
 @pytest.mark.parametrize("n_samples, n_features", ((10, 100), (100, 10)))
 def test_ard_accuracy_on_easy_problem(global_random_seed, n_samples, n_features):
     # Check that ARD converges with reasonable accuracy on an easy problem
-    # (Github issue #14055)
+    # (GitHub issue #14055)
     X = np.random.RandomState(global_random_seed).normal(size=(250, 3))
     y = X[:, 1]
 

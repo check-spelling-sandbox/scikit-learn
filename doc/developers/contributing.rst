@@ -544,7 +544,7 @@ Continuous Integration (CI)
 * Azure pipelines are used for testing scikit-learn on Linux, Mac and Windows,
   with different dependencies and settings.
 * CircleCI is used to build the docs for viewing.
-* Github Actions are used for various tasks, including building wheels and
+* GitHub Actions are used for various tasks, including building wheels and
   source distributions.
 
 .. _commit_markers:

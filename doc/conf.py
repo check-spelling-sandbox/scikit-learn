@@ -964,8 +964,8 @@ user_agent = (
     "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0"
 )
 
-# Use Github token from environment variable to avoid Github rate limits when
-# checking Github links
+# Use GitHub token from environment variable to avoid GitHub rate limits when
+# checking GitHub links
 github_token = os.getenv("GITHUB_TOKEN")
 
 if github_token is None:

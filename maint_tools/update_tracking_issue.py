@@ -24,7 +24,7 @@ parser = argparse.ArgumentParser(
     description="Create or update issue from JUnit test results from pytest"
 )
 parser.add_argument(
-    "bot_github_token", help="Github token for creating or updating an issue"
+    "bot_github_token", help="GitHub token for creating or updating an issue"
 )
 parser.add_argument("ci_name", help="Name of CI run instance")
 parser.add_argument("issue_repo", help="Repo to track issues")
