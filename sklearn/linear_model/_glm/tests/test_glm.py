@@ -363,7 +363,7 @@ def test_glm_regression_unpenalized(solver, fit_intercept, glm_dataset):
 
     with warnings.catch_warnings():
         if solver.startswith("newton") and n_samples < n_features:
-            # The newton solvers should warn and automatically fallback to LBFGS
+            # The newton solvers should warn and automatically fall back to LBFGS
             # in this case. The model should still converge.
             warnings.filterwarnings("ignore", category=scipy.linalg.LinAlgWarning)
         # XXX: Investigate if the ConvergenceWarning that can appear in some
@@ -454,7 +454,7 @@ def test_glm_regression_unpenalized_hstacked_X(solver, fit_intercept, glm_datase
 
     with warnings.catch_warnings():
         if solver.startswith("newton"):
-            # The newton solvers should warn and automatically fallback to LBFGS
+            # The newton solvers should warn and automatically fall back to LBFGS
             # in this case. The model should still converge.
             warnings.filterwarnings("ignore", category=scipy.linalg.LinAlgWarning)
         # XXX: Investigate if the ConvergenceWarning that can appear in some
@@ -535,7 +535,7 @@ def test_glm_regression_unpenalized_vstacked_X(solver, fit_intercept, glm_datase
 
     with warnings.catch_warnings():
         if solver.startswith("newton") and n_samples < n_features:
-            # The newton solvers should warn and automatically fallback to LBFGS
+            # The newton solvers should warn and automatically fall back to LBFGS
             # in this case. The model should still converge.
             warnings.filterwarnings("ignore", category=scipy.linalg.LinAlgWarning)
         # XXX: Investigate if the ConvergenceWarning that can appear in some

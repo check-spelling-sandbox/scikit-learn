@@ -582,7 +582,7 @@ def _lars_path_solver(
         # use the precision level of input data if it is consistent
         return_dtype = next(iter(dtypes))
     else:
-        # fallback to double precision otherwise
+        # fall back to double precision otherwise
         return_dtype = np.float64
 
     if return_path:

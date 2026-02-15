@@ -372,7 +372,7 @@ def _spectral_embedding(
                 embedding = embedding / dd
         except RuntimeError:
             # When submatrices are exactly singular, an LU decomposition
-            # in arpack fails. We fallback to lobpcg
+            # in arpack fails. We fall back to lobpcg
             eigen_solver = "lobpcg"
             # Revert the laplacian to its opposite to have lobpcg work
             laplacian *= -1
@@ -427,7 +427,7 @@ def _spectral_embedding(
         if n_nodes < 5 * n_components + 1:
             # see note above under arpack why lobpcg has problems with small
             # number of nodes
-            # lobpcg will fallback to eigh, so we short circuit it
+            # lobpcg will fall back to eigh, so we short circuit it
             if sparse.issparse(laplacian):
                 laplacian = laplacian.toarray()
             _, diffusion_map = eigh(laplacian, check_finite=False)

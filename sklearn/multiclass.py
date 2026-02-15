@@ -231,7 +231,7 @@ class OneVsRestClassifier(
     estimator : estimator object
         A regressor or a classifier that implements :term:`fit`.
         When a classifier is passed, :term:`decision_function` will be used
-        in priority and it will fallback to :term:`predict_proba` if it is not
+        in priority and it will fall back to :term:`predict_proba` if it is not
         available.
         When a regressor is passed, :term:`predict` is used.
 
@@ -695,7 +695,7 @@ class OneVsOneClassifier(MetaEstimatorMixin, ClassifierMixin, BaseEstimator):
     estimator : estimator object
         A regressor or a classifier that implements :term:`fit`.
         When a classifier is passed, :term:`decision_function` will be used
-        in priority and it will fallback to :term:`predict_proba` if it is not
+        in priority and it will fall back to :term:`predict_proba` if it is not
         available.
         When a regressor is passed, :term:`predict` is used.
 
