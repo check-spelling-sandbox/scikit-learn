@@ -127,7 +127,7 @@ mitigated by increasing the size of the mini-batches (exercise: change
 Notes
 ......
 
-.. [1] Depending on the algorithm the mini-batch size can influence results or
+.. [1] Depending on the algorithm, the mini-batch size can influence results or
        not. SGD* and discrete NaiveBayes are truly online
        and are not affected by batch size. Conversely, MiniBatchKMeans
        convergence rate is affected by the batch size. Also, its memory
