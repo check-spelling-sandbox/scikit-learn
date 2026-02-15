@@ -642,7 +642,7 @@ evaluate(cyclic_spline_interactions_pipeline, X, y, cv=ts_cv)
 # -----------------------------------------------------
 #
 # The previous analysis highlighted the need to model the interactions between
-# `"workingday"` and `"hours"`. Another example of a such a non-linear
+# `"workingday"` and `"hours"`. Another example of such a non-linear
 # interaction that we would like to model could be the impact of the rain that
 # might not be the same during the working days and the week-ends and holidays
 # for instance.
