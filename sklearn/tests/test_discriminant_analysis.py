@@ -472,7 +472,7 @@ def test_lda_dimension_warning(n_classes, n_features):
 
     for n_components in [max_components + 1, max(n_features, n_classes - 1) + 1]:
         # if n_components > min(n_classes - 1, n_features), raise error.
-        # We test one unit higher than max_components, and then something
+        # We test one unit above max_components, and then something
         # larger than both n_features and n_classes - 1 to ensure the test
         # works for any value of n_component
         lda = LinearDiscriminantAnalysis(n_components=n_components)

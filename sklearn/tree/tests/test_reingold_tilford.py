@@ -23,7 +23,7 @@ def test_buchheim(tree, n_nodes):
     def walk_tree(draw_tree):
         res = [(draw_tree.x, draw_tree.y)]
         for child in draw_tree.children:
-            # parents higher than children:
+            # parents above children:
             assert child.y == draw_tree.y + 1
             res.extend(walk_tree(child))
         if len(draw_tree.children):
