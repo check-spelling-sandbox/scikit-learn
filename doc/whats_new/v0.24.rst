@@ -792,7 +792,7 @@ Changelog
 - |Enhancement| :class:`multiclass.OneVsOneClassifier` now accepts
   the inputs with missing values. Hence, estimators which can handle
   missing values (may be a pipeline with imputation step) can be used as
-  a estimator for multiclass wrappers.
+  an estimator for multiclass wrappers.
   :pr:`17987` by :user:`Venkatachalam N <venkyyuvy>`.
 
 - |Fix| A fix to allow :class:`multiclass.OutputCodeClassifier` to accept
@@ -807,7 +807,7 @@ Changelog
   :class:`multioutput.MultiOutputRegressor` now accepts the inputs
   with missing values. Hence, estimators which can handle missing
   values (may be a pipeline with imputation step, HistGradientBoosting
-  estimators) can be used as a estimator for multiclass wrappers.
+  estimators) can be used as an estimator for multiclass wrappers.
   :pr:`17987` by :user:`Venkatachalam N <venkyyuvy>`.
 
 - |Fix| A fix to accept tuples for the ``order`` parameter

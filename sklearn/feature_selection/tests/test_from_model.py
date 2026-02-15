@@ -414,7 +414,7 @@ def test_prefit():
     # Test all possible combinations of the prefit parameter.
 
     # Passing a prefit parameter with the selected model
-    # and fitting a unfit model with prefit=False should give same results.
+    # and fitting an unfit model with prefit=False should give same results.
     clf = SGDClassifier(alpha=0.1, max_iter=10, shuffle=True, random_state=0, tol=None)
     model = SelectFromModel(clf)
     model.fit(data, y)

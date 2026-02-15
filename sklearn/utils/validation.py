@@ -1593,7 +1593,7 @@ def _is_fitted(estimator, attributes=None, all_or_any=all):
         Eg.: ``["coef_", "estimator_", ...], "coef_"``
 
         If `None`, `estimator` is considered fitted if there exist an
-        attribute that ends with a underscore and does not start with double
+        attribute that ends with an underscore and does not start with double
         underscore.
 
     all_or_any : callable, {all, any}, default=all
@@ -1646,7 +1646,7 @@ def check_is_fitted(estimator, attributes=None, *, msg=None, all_or_any=all):
         Eg.: ``["coef_", "estimator_", ...], "coef_"``
 
         If `None`, `estimator` is considered fitted if there exist an
-        attribute that ends with a underscore and does not start with double
+        attribute that ends with an underscore and does not start with double
         underscore.
 
     msg : str, default=None

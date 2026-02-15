@@ -1099,7 +1099,7 @@ def test_check_array_series():
 )
 @pytest.mark.parametrize("bool_dtype", ("bool", "boolean"))
 def test_check_dataframe_mixed_float_dtypes(dtype, bool_dtype):
-    # pandas dataframe will coerce a boolean into a object, this is a mismatch
+    # pandas dataframe will coerce a boolean into an object, this is a mismatch
     # with np.result_type which will return a float
     # check_array needs to explicitly check for bool dtype in a dataframe for
     # this situation

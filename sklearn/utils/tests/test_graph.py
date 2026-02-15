@@ -45,7 +45,7 @@ def test_fix_connected_components_precomputed():
 
 
 def test_fix_connected_components_wrong_mode():
-    # Test that the an error is raised if the mode string is incorrect.
+    # Test that an error is raised if the mode string is incorrect.
     X = np.array([0, 1, 2, 5, 6, 7])[:, None]
     graph = kneighbors_graph(X, n_neighbors=2, mode="distance")
     n_connected_components, labels = connected_components(graph)
