@@ -1005,7 +1005,7 @@ def fetch_openml(
     # provided
     if name is not None:
         # OpenML is case-insensitive, but the caching mechanism is not
-        # convert all data names (str) to lower case
+        # convert all data names (str) to lowercase
         name = name.lower()
         if data_id is not None:
             raise ValueError(

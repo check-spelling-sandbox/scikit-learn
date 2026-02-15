@@ -172,7 +172,7 @@ def get_profile(login):
 
 
 def key(profile):
-    """Get a sorting key based on the lower case last name, then firstname"""
+    """Get a sorting key based on the lowercase last name, then firstname"""
     components = profile["name"].lower().split(" ")
     return " ".join([components[-1]] + components[:-1])
 

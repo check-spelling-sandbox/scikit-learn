@@ -958,7 +958,7 @@ Changelog
 ...................
 
 - |Enhancement| :func:`tree.plot_tree`, :func:`tree.export_graphviz` now uses
-  a lower case `x[i]` to represent feature `i`. :pr:`23480` by `Thomas Fan`_.
+  a lowercase `x[i]` to represent feature `i`. :pr:`23480` by `Thomas Fan`_.
 
 :mod:`sklearn.utils`
 ....................
