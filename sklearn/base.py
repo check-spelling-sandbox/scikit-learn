@@ -1136,7 +1136,7 @@ class OutlierMixin:
                     UserWarning,
                 )
 
-        # override for transductive outlier detectors like LocalOulierFactor
+        # override for transductive outlier detectors like LocalOutlierFactor
         return self.fit(X, **kwargs).predict(X)
 
 
