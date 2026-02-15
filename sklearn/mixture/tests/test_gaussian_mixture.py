@@ -404,7 +404,7 @@ def test_suffstat_sk_diag():
 
 
 def test_gaussian_suffstat_sk_spherical(global_dtype):
-    # computing spherical covariance equals to the variance of one-dimension
+    # computing spherical covariance equals the variance of one-dimension
     # data after flattening, n_components=1
     rng = np.random.RandomState(0)
     n_samples, n_features = 500, 2

@@ -147,7 +147,7 @@ def test_bayesian_initial_params():
     # In this case, starting from the default initial values will increase
     # the bias of the fitted curve. So, lambda_init should be small.
     reg = BayesianRidge(alpha_init=1.0, lambda_init=1e-3)
-    # Check the R2 score nearly equals to one.
+    # Check the R2 score nearly equals one.
     r2 = reg.fit(X, y).score(X, y)
     assert_almost_equal(r2, 1.0)
 

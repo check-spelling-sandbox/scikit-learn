@@ -390,7 +390,7 @@ def test_number_of_subsets_of_features(global_random_seed):
             step=step,
         )
         rfe.fit(X, y)
-        # this number also equals to the maximum of ranking_
+        # this number also equals the maximum of ranking_
         assert np.max(rfe.ranking_) == formula1(n_features, n_features_to_select, step)
         assert np.max(rfe.ranking_) == formula2(n_features, n_features_to_select, step)
 
