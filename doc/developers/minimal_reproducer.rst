@@ -168,7 +168,7 @@ In particular, for this specific example:
 
 The idea is to make the code as self-contained as possible. For doing so, you
 can use a :ref:`synth_data`. It can be generated using numpy, pandas or the
-:mod:`sklearn.datasets` module. Most of the times the bug is not related to a
+:mod:`sklearn.datasets` module. Most of the time the bug is not related to a
 particular structure of your data. Even if it is, try to find an available
 dataset that has similar characteristics to yours and that reproduces the
 problem. In this particular case, we are interested in data that has labeled
