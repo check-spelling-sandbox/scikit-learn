@@ -32,7 +32,7 @@ similar datasets which show a spiral structure. In the first example we
 build a Swiss roll dataset and run hierarchical clustering on the position
 of the data. Here, we compare unstructured Ward clustering with a
 structured variant that enforces k-Nearest Neighbors connectivity. In the
-second example we include the effects of applying a such a connectivity graph
+second example we include the effects of applying such a connectivity graph
 to single, average and complete linkage.
 """
 
