@@ -15,7 +15,7 @@ Importing this file dynamically sets the
     >>> from sklearn.model_selection import HalvingGridSearchCV
 
 
-The ``# noqa`` comment comment can be removed: it just tells linters like
+The ``# noqa`` comment can be removed: it just tells linters like
 flake8 to ignore the import, which appears as unused.
 """
 
