@@ -136,7 +136,7 @@ class IsolationForest(OutlierMixin, BaseBagging):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`the Glossary <warm_start>`.
 
         .. versionadded:: 0.21

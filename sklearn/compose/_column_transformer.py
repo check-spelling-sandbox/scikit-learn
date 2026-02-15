@@ -193,7 +193,7 @@ class ColumnTransformer(TransformerMixin, _BaseComposition):
         are remaining columns, the final element is a tuple of the form:
         ('remainder', transformer, remaining_columns) corresponding to the
         ``remainder`` parameter. If there are remaining columns, then
-        ``len(transformers_)==len(transformers)+1``, otherwise
+        ``len(transformers_)==len(transformers)+1``; otherwise, 
         ``len(transformers_)==len(transformers)``.
 
         .. versionadded:: 1.7

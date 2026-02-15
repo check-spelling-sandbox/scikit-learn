@@ -519,7 +519,7 @@ class RocCurveDisplay(_BinaryClassifierCurveDisplayMixin):
         pos_label : int, float, bool or str, default=None
             The label of the positive class when computing the ROC AUC.
             When `pos_label=None`, if `y_true` is in {-1, 1} or {0, 1}, `pos_label`
-            is set to 1, otherwise an error will be raised.
+            is set to 1; otherwise, an error will be raised.
 
         name : str, default=None
             Name of ROC curve for legend labeling. If `None`, name will be set to

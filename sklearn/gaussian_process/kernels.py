@@ -2104,7 +2104,7 @@ class DotProduct(Kernel):
     the coordinates about the origin, but not translations.
     It is parameterized by a parameter sigma_0 :math:`\sigma`
     which controls the inhomogenity of the kernel. For :math:`\sigma_0^2 =0`,
-    the kernel is called the homogeneous linear kernel, otherwise
+    the kernel is called the homogeneous linear kernel; otherwise, 
     it is inhomogeneous. The kernel is given by
 
     .. math::

@@ -68,7 +68,7 @@ def _weighted_percentile(
         axis 0 if `array` is 2D).
 
     average : bool, default=False
-        If `True`, uses the "averaged_inverted_cdf" quantile method, otherwise
+        If `True`, uses the "averaged_inverted_cdf" quantile method; otherwise, 
         defaults to "inverted_cdf". "averaged_inverted_cdf" is symmetrical with
         unit `sample_weight`, such that the total of `sample_weight` below or equal to
         `_weighted_percentile(percentile_rank)` is the same as the total of

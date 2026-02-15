@@ -155,7 +155,7 @@ def scale(X, *, axis=0, with_mean=True, with_std=True, copy=True):
 
     axis : {0, 1}, default=0
         Axis used to compute the means and standard deviations along. If 0,
-        independently standardize each feature, otherwise (if 1) standardize
+        independently standardize each feature; otherwise, (if 1) standardize
         each sample.
 
     with_mean : bool, default=True
@@ -832,7 +832,7 @@ class StandardScaler(OneToOneFeatureMixin, TransformerMixin, BaseEstimator):
     n_samples_seen_ : int or ndarray of shape (n_features,)
         The number of samples processed by the estimator for each feature.
         If there are no missing samples, the ``n_samples_seen`` will be an
-        integer, otherwise it will be an array of dtype int. If
+        integer; otherwise, it will be an array of dtype int. If
         `sample_weights` are used it will be a float (if no missing data)
         or an array of dtype float that sums the weights seen so far.
         Will be reset on new calls to fit, but increments across
@@ -1835,7 +1835,7 @@ def robust_scale(
 
     axis : int, default=0
         Axis used to compute the medians and IQR along. If 0,
-        independently scale each feature, otherwise (if 1) scale
+        independently scale each feature; otherwise, (if 1) scale
         each sample.
 
     with_centering : bool, default=True
@@ -1976,7 +1976,7 @@ def normalize(X, norm="l2", *, axis=1, copy=True, return_norm=False):
 
     axis : {0, 1}, default=1
         Define axis used to normalize the data along. If 1, independently
-        normalize each sample, otherwise (if 0) normalize each feature.
+        normalize each sample; otherwise, (if 0) normalize each feature.
 
     copy : bool, default=True
         If False, try to avoid a copy and normalize in place.
@@ -3116,7 +3116,7 @@ def quantile_transform(
 
     axis : int, default=0
         Axis used to compute the means and standard deviations along. If 0,
-        transform each feature, otherwise (if 1) transform each sample.
+        transform each feature; otherwise, (if 1) transform each sample.
 
     n_quantiles : int, default=1000 or n_samples
         Number of quantiles to be computed. It corresponds to the number

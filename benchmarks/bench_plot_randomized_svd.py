@@ -45,7 +45,7 @@ We compare the following algorithms:
 Conclusion
 ----------
 - n_iter=2 appears to be a good default value
-- power_iteration_normalizer='none' is OK if n_iter is small, otherwise LU
+- power_iteration_normalizer='none' is OK if n_iter is small; otherwise, LU
   gives similar errors to QR but is cheaper. That's what 'auto' implements.
 
 References

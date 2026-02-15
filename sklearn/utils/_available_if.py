@@ -68,7 +68,7 @@ def available_if(check):
     -------
     callable
         Callable makes the decorated method available if `check` returns
-        a truthy value, otherwise the decorated method is unavailable.
+        a truthy value; otherwise, the decorated method is unavailable.
 
     Examples
     --------

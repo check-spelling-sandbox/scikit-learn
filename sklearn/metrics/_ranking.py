@@ -335,7 +335,7 @@ def det_curve(
     pos_label : int, float, bool or str, default=None
         The label of the positive class.
         When ``pos_label=None``, if `y_true` is in {-1, 1} or {0, 1},
-        ``pos_label`` is set to 1, otherwise an error will be raised.
+        ``pos_label`` is set to 1; otherwise, an error will be raised.
 
     sample_weight : array-like of shape (n_samples,), default=None
         Sample weights.
@@ -1066,7 +1066,7 @@ def precision_recall_curve(
     pos_label : int, float, bool or str, default=None
         The label of the positive class.
         When ``pos_label=None``, if y_true is in {-1, 1} or {0, 1},
-        ``pos_label`` is set to 1, otherwise an error will be raised.
+        ``pos_label`` is set to 1; otherwise, an error will be raised.
 
     sample_weight : array-like of shape (n_samples,), default=None
         Sample weights.
@@ -1204,7 +1204,7 @@ def roc_curve(
     pos_label : int, float, bool or str, default=None
         The label of the positive class.
         When ``pos_label=None``, if `y_true` is in {-1, 1} or {0, 1},
-        ``pos_label`` is set to 1, otherwise an error will be raised.
+        ``pos_label`` is set to 1; otherwise, an error will be raised.
 
     sample_weight : array-like of shape (n_samples,), default=None
         Sample weights.
@@ -1838,7 +1838,7 @@ def dcg_score(
     >>> dcg_score(true_relevance, scores, k=1)
     7.5
     >>> # we can choose to ignore ties for faster results, but only
-    >>> # if we know there aren't ties in our scores, otherwise we get
+    >>> # if we know there aren't ties in our scores; otherwise, we get
     >>> # wrong results:
     >>> dcg_score(true_relevance,
     ...           scores, k=1, ignore_ties=True)
@@ -2007,7 +2007,7 @@ def ndcg_score(y_true, y_score, *, k=None, sample_weight=None, ignore_ties=False
     >>> ndcg_score(true_relevance, scores, k=1)
     0.75
     >>> # we can choose to ignore ties for faster results, but only
-    >>> # if we know there aren't ties in our scores, otherwise we get
+    >>> # if we know there aren't ties in our scores; otherwise, we get
     >>> # wrong results:
     >>> ndcg_score(true_relevance,
     ...           scores, k=1, ignore_ties=True)

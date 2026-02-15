@@ -12,7 +12,7 @@ set -x
 # PR (e.g. a merge to main or a maintenance branch).
 #
 # If this is a PR, do a full build if there are some files in this PR that are
-# under the "doc/" or "examples/" folders, otherwise perform a quick build.
+# under the "doc/" or "examples/" folders; otherwise, perform a quick build.
 #
 # If the inspection of the current commit fails for any reason, the default
 # behavior is to quick build the documentation.

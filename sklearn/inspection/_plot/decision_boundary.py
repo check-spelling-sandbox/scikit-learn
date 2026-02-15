@@ -106,14 +106,14 @@ class DecisionBoundaryDisplay:
           strings, of length `n_classes`
         * str: name of :class:`matplotlib.colors.Colormap`
         * None: 'tab10' colormap is used to sample colors if the number of
-          classes is less than or equal to 10, otherwise 'gist_rainbow' colormap.
+          classes is less than or equal to 10; otherwise, 'gist_rainbow' colormap.
 
         Single color (fading to white) colormaps will be generated from the colors in
         the list or colors taken from the colormap, and passed to the `cmap` parameter
         of the `plot_method`.
 
         For :term:`binary` problems, this is ignored and `cmap` or `colors` can be
-        passed as kwargs instead, otherwise, the default colormap ('viridis') is used.
+        passed as kwargs instead; otherwise, the default colormap ('viridis') is used.
 
         .. versionadded:: 1.7
         .. versionchanged:: 1.9
@@ -225,7 +225,7 @@ class DecisionBoundaryDisplay:
         **kwargs : dict
             Additional keyword arguments to be passed to the `plot_method`. For
             :term:`binary` problems, `cmap` or `colors` can be set here to specify the
-            colormap or colors, otherwise the default colormap ('viridis') is used.
+            colormap or colors; otherwise, the default colormap ('viridis') is used.
 
         Returns
         -------
@@ -409,7 +409,7 @@ class DecisionBoundaryDisplay:
               strings, of length `n_classes`
             * str: name of :class:`matplotlib.colors.Colormap`
             * None: 'tab10' colormap is used to sample colors if the number of
-                classes is less than or equal to 10, otherwise 'gist_rainbow'
+                classes is less than or equal to 10; otherwise, 'gist_rainbow'
                 colormap.
 
             Single color (fading to white) colormaps will be generated from the colors
@@ -417,7 +417,7 @@ class DecisionBoundaryDisplay:
             parameter of the `plot_method`.
 
             For :term:`binary` problems, this is ignored and `cmap` or `colors` can be
-            passed as kwargs instead, otherwise, the default colormap ('viridis') is
+            passed as kwargs instead; otherwise, the default colormap ('viridis') is
             used.
 
             .. versionadded:: 1.7
@@ -426,12 +426,12 @@ class DecisionBoundaryDisplay:
 
         xlabel : str, default=None
             The label used for the x-axis. If `None`, an attempt is made to
-            extract a label from `X` if it is a dataframe, otherwise an empty
+            extract a label from `X` if it is a dataframe; otherwise, an empty
             string is used.
 
         ylabel : str, default=None
             The label used for the y-axis. If `None`, an attempt is made to
-            extract a label from `X` if it is a dataframe, otherwise an empty
+            extract a label from `X` if it is a dataframe; otherwise, an empty
             string is used.
 
         ax : Matplotlib axes, default=None

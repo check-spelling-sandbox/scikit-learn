@@ -1205,7 +1205,7 @@ since it reduces the input data to a set of subclusters which are obtained direc
 from the leaves of the CFT. This reduced data can be further processed by feeding
 it into a global clusterer. This global clusterer can be set by ``n_clusters``.
 If ``n_clusters`` is set to None, the subclusters from the leaves are directly
-read off, otherwise a global clustering step labels these subclusters into global
+read off; otherwise, a global clustering step labels these subclusters into global
 clusters (labels) and the samples are mapped to the global label of the nearest subcluster.
 
 .. dropdown:: Algorithm description

@@ -478,7 +478,7 @@ by putting :math:`N(0, 1)` priors on the coefficients of :math:`x_d (d = 1, . . 
 a prior of :math:`N(0, \sigma_0^2)` on the bias. The :class:`DotProduct` kernel is invariant to a rotation
 of the coordinates about the origin, but not translations.
 It is parameterized by a parameter :math:`\sigma_0^2`. For :math:`\sigma_0^2 = 0`, the kernel
-is called the homogeneous linear kernel, otherwise it is inhomogeneous. The kernel is given by
+is called the homogeneous linear kernel; otherwise, it is inhomogeneous. The kernel is given by
 
 .. math::
    k(x_i, x_j) = \sigma_0 ^ 2 + x_i \cdot x_j

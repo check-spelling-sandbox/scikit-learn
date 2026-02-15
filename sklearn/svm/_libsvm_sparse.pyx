@@ -179,7 +179,7 @@ def libsvm_sparse_train (int n_features,
     copy_n_iter(<char *> &n_iter[0], model)
 
     # copy model.sv_coef
-    # we create a new array instead of resizing, otherwise
+    # we create a new array instead of resizing; otherwise, 
     # it would not erase previous information
     cdef float64_t[::1] sv_coef_data
     sv_coef_data = np.empty((n_class-1)*SV_len, dtype=np.float64)

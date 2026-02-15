@@ -109,7 +109,7 @@ class Perceptron(BaseSGDClassifier):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution. See
+        initialization; otherwise, just erase the previous solution. See
         :term:`the Glossary <warm_start>`.
 
     Attributes

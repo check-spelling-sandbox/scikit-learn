@@ -207,7 +207,7 @@ def sort_graph_by_row_values(graph, copy=False, warn_when_not_sorted=True):
     copy : bool, default=False
         If True, the graph is copied before sorting. If False, the sorting is
         performed inplace. If the graph is not of CSR format, `copy` must be
-        True to allow the conversion to CSR format, otherwise an error is
+        True to allow the conversion to CSR format; otherwise, an error is
         raised.
 
     warn_when_not_sorted : bool, default=True

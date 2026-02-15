@@ -485,7 +485,7 @@ experimental, and add a `# noqa` comment to avoid PEP8-related warnings::
   from sklearn.impute import IterativeImputer
 
 For the docs to render properly, please also import `enable_my_experimental_feature` in
-`doc/conf.py`, otherwise sphinx will not be able to detect and import the corresponding
+`doc/conf.py`; otherwise, sphinx will not be able to detect and import the corresponding
 modules. Note that using `from sklearn.experimental import *` **does not work**.
 
 .. note::

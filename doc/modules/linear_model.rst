@@ -1059,7 +1059,7 @@ logistic regression, see also `log-linear model
     + \frac{r(W)}{S C}\,,
 
   where :math:`[P]` represents the Iverson bracket which evaluates to :math:`0`
-  if :math:`P` is false, otherwise it evaluates to :math:`1`.
+  if :math:`P` is false; otherwise, it evaluates to :math:`1`.
 
   Again, :math:`s_{ik}` are the weights assigned by the user (multiplication of sample
   weights and class weights) with their sum :math:`S = \sum_{i=1}^n \sum_{k=0}^{K-1} s_{ik}`.

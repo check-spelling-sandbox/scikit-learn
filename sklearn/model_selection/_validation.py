@@ -904,7 +904,7 @@ def _fit_and_score(
 def _score(estimator, X_test, y_test, scorer, score_params, error_score="raise"):
     """Compute the score(s) of an estimator on a given test set.
 
-    Will return a dict of floats if `scorer` is a _MultiMetricScorer, otherwise a single
+    Will return a dict of floats if `scorer` is a _MultiMetricScorer; otherwise, a single
     float is returned.
     """
     score_params = {} if score_params is None else score_params

@@ -1439,7 +1439,7 @@ class CalibrationDisplay(_BinaryClassifierCurveDisplayMixin):
 
         name : str, default=None
             Name for labeling curve. If `None`, use `estimator_name` if
-            not `None`, otherwise no labeling is shown.
+            not `None`; otherwise, no labeling is shown.
 
         ref_line : bool, default=True
             If `True`, plots a reference line representing a perfectly
@@ -1655,7 +1655,7 @@ class CalibrationDisplay(_BinaryClassifierCurveDisplayMixin):
         pos_label : int, float, bool or str, default=None
             The positive class when computing the calibration curve.
             When `pos_label=None`, if `y_true` is in {-1, 1} or {0, 1},
-            `pos_label` is set to 1, otherwise an error will be raised.
+            `pos_label` is set to 1; otherwise, an error will be raised.
 
             .. versionadded:: 1.1
 

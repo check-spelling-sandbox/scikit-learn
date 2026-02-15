@@ -493,7 +493,7 @@ def test_constant_target_and_feature(y, y_mean, smooth):
 def test_fit_transform_not_associated_with_y_if_ordinal_categorical_is_not(
     global_random_seed,
 ):
-    cardinality = 30  # not too large, otherwise we need a very large n_samples
+    cardinality = 30  # not too large; otherwise, we need a very large n_samples
     n_samples = 3000
     rng = np.random.RandomState(global_random_seed)
     y_train = rng.normal(size=n_samples)

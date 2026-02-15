@@ -126,7 +126,7 @@ as the output function.
 Further, the model supports :ref:`multi-label classification <multiclass>`
 in which a sample can belong to more than one class. For each class, the raw
 output passes through the logistic function. Values larger or equal to `0.5`
-are rounded to `1`, otherwise to `0`. For a predicted output of a sample, the
+are rounded to `1`; otherwise, to `0`. For a predicted output of a sample, the
 indices where the value is `1` represent the assigned classes of that sample::
 
     >>> X = [[0., 0.], [1., 1.]]

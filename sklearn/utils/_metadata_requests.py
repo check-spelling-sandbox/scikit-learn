@@ -147,7 +147,7 @@ def _routing_repr(obj):
     are. This is done by implementing a `_routing_repr` method on the object.
 
     Since the `owner` object could be the type name (str), we return that string if the
-    given `obj` is a string, otherwise we return the object's type name.
+    given `obj` is a string; otherwise, we return the object's type name.
 
     .. versionadded:: 1.8
     """
@@ -268,7 +268,7 @@ class _RoutingNotSupportedMixin:
 UNUSED = "$UNUSED$"
 
 # this is used whenever a default value is changed, and therefore the user
-# should explicitly set the value, otherwise a warning is shown. An example
+# should explicitly set the value; otherwise, a warning is shown. An example
 # is when a meta-estimator is only a router, but then becomes also a
 # consumer in a new release.
 WARN = "$WARN$"

@@ -2669,7 +2669,7 @@ class RidgeCV(MultiOutputMixin, RegressorMixin, _BaseRidgeCV):
         Flag indicating which strategy to use when performing
         Leave-One-Out Cross-Validation. Options are::
 
-            'auto' : use 'svd' if n_samples > n_features, otherwise use 'eigen'
+            'auto' : use 'svd' if n_samples > n_features; otherwise, use 'eigen'
             'svd' : force use of singular value decomposition of X when X is
                 dense, eigenvalue decomposition of X^T.X when X is sparse.
             'eigen' : force computation via eigendecomposition of X.X^T

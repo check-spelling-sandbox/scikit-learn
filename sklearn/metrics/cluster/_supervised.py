@@ -867,7 +867,7 @@ def mutual_info_score(labels_true, labels_pred, *, contingency=None):
             (n_classes_true, n_classes_pred), default=None
         A contingency matrix given by the
         :func:`~sklearn.metrics.cluster.contingency_matrix` function. If value
-        is ``None``, it will be computed, otherwise the given value is used,
+        is ``None``, it will be computed; otherwise, the given value is used,
         with ``labels_true`` and ``labels_pred`` ignored.
 
     Returns

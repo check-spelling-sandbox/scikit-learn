@@ -251,7 +251,7 @@ and use ``decision_function`` instead of ``predict_proba``.
 Please note that when ``decision_function_shape='ovr'`` and ``n_classes > 2``,
 unlike ``decision_function``, the ``predict`` method does not try to break ties
 by default. You can set ``break_ties=True`` for the output of ``predict`` to be
-the same as ``np.argmax(clf.decision_function(...), axis=1)``, otherwise the
+the same as ``np.argmax(clf.decision_function(...), axis=1)``; otherwise, the
 first class among the tied classes will always be returned; but have in mind
 that it comes with a computational cost. See
 :ref:`sphx_glr_auto_examples_svm_plot_svm_tie_breaking.py` for an example on

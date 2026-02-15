@@ -883,7 +883,7 @@ def fetch_openml(
           memory- and CPU-efficient. It deals with sparse ARFF datasets.
 
         If `"auto"`, the parser is chosen automatically such that `"liac-arff"`
-        is selected for sparse ARFF datasets, otherwise `"pandas"` is selected.
+        is selected for sparse ARFF datasets; otherwise, `"pandas"` is selected.
 
         .. versionadded:: 1.2
         .. versionchanged:: 1.4

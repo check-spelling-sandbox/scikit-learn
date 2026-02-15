@@ -151,7 +151,7 @@ def _preprocess_data(
     Returns
     -------
     X_out : {ndarray, sparse matrix} of shape (n_samples, n_features)
-        If copy=True a copy of the input X is triggered, otherwise operations are
+        If copy=True a copy of the input X is triggered; otherwise, operations are
         inplace.
         If input X is dense, then X_out is centered.
     y_out : {ndarray, sparse matrix} of shape (n_samples,) or (n_samples, n_targets)

@@ -992,7 +992,7 @@ class MLPClassifier(ClassifierMixin, BaseMultilayerPerceptron):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous
-        call to fit as initialization, otherwise, just erase the
+        call to fit as initialization; otherwise, just erase the
         previous solution. See :term:`the Glossary <warm_start>`.
 
     momentum : float, default=0.9
@@ -1069,7 +1069,7 @@ class MLPClassifier(ClassifierMixin, BaseMultilayerPerceptron):
 
     best_validation_score_ : float or None
         The best validation score (i.e. accuracy score) that triggered the
-        early stopping. Only available if `early_stopping=True`, otherwise the
+        early stopping. Only available if `early_stopping=True`; otherwise, the
         attribute is set to `None`.
 
     t_ : int
@@ -1507,7 +1507,7 @@ class MLPRegressor(RegressorMixin, BaseMultilayerPerceptron):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous
-        call to fit as initialization, otherwise, just erase the
+        call to fit as initialization; otherwise, just erase the
         previous solution. See :term:`the Glossary <warm_start>`.
 
     momentum : float, default=0.9
@@ -1581,7 +1581,7 @@ class MLPRegressor(RegressorMixin, BaseMultilayerPerceptron):
 
     best_validation_score_ : float or None
         The best validation score (i.e. R2 score) that triggered the
-        early stopping. Only available if `early_stopping=True`, otherwise the
+        early stopping. Only available if `early_stopping=True`; otherwise, the
         attribute is set to `None`.
         Only accessible when solver='sgd' or 'adam'.
 

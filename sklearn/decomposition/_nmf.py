@@ -984,7 +984,7 @@ def non_negative_factorization(
 
         Valid options:
 
-        - None: 'nndsvda' if n_components < n_features, otherwise 'random'.
+        - None: 'nndsvda' if n_components < n_features; otherwise, 'random'.
         - 'random': non-negative random matrices, scaled with:
           `sqrt(X.mean() / n_components)`
         - 'nndsvd': Nonnegative Double Singular Value Decomposition (NNDSVD)

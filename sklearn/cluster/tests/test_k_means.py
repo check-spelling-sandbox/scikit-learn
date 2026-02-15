@@ -126,7 +126,7 @@ def test_relocate_empty_clusters(array_constr):
 
     # With this initialization, all points will be assigned to the first center
     # At this point a center in centers_new is the weighted sum of the points
-    # it contains if it's not empty, otherwise it is the same as before.
+    # it contains if it's not empty; otherwise, it is the same as before.
     centers_new = np.array([-16.5, -10, -10]).reshape(-1, 1)
     weight_in_clusters = np.array([10.0, 0, 0])
     labels = np.zeros(10, dtype=np.int32)
@@ -893,7 +893,7 @@ def _sort_centers(centers):
 
 def test_weighted_vs_repeated(global_random_seed):
     # Check that a sample weight of N should yield the same result as an N-fold
-    # repetition of the sample. Valid only if init is precomputed, otherwise
+    # repetition of the sample. Valid only if init is precomputed; otherwise, 
     # rng produces different results. Not valid for MinibatchKMeans due to rng
     # to extract minibatches.
     sample_weight = np.random.RandomState(global_random_seed).randint(

@@ -163,7 +163,7 @@ class PrecisionRecallDisplay(_BinaryClassifierCurveDisplayMixin):
 
         name : str, default=None
             Name of precision recall curve for labeling. If `None`, use
-            `name` if not `None`, otherwise no labeling is shown.
+            `name` if not `None`; otherwise, no labeling is shown.
 
         plot_chance_level : bool, default=False
             Whether to plot the chance level. The chance level is the prevalence
@@ -467,7 +467,7 @@ class PrecisionRecallDisplay(_BinaryClassifierCurveDisplayMixin):
         pos_label : int, float, bool or str, default=None
             The class considered as the positive class when computing the
             precision and recall metrics. When `pos_label=None`, if `y_true` is
-            in {-1, 1} or {0, 1}, `pos_label` is set to 1, otherwise an error
+            in {-1, 1} or {0, 1}, `pos_label` is set to 1; otherwise, an error
             will be raised.
 
         name : str, default=None

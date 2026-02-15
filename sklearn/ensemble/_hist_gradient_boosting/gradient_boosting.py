@@ -1638,7 +1638,7 @@ class HistGradientBoostingRegressor(RegressorMixin, BaseHistGradientBoosting):
     early_stopping : 'auto' or bool, default='auto'
         If 'auto', early stopping is enabled if the sample size is larger than
         10000 or if `X_val` and `y_val` are passed to `fit`. If True, early stopping
-        is enabled, otherwise early stopping is disabled.
+        is enabled; otherwise, early stopping is disabled.
 
         .. versionadded:: 0.23
 
@@ -2032,7 +2032,7 @@ class HistGradientBoostingClassifier(ClassifierMixin, BaseHistGradientBoosting):
     early_stopping : 'auto' or bool, default='auto'
         If 'auto', early stopping is enabled if the sample size is larger than
         10000 or if `X_val` and `y_val` are passed to `fit`. If True, early stopping
-        is enabled, otherwise early stopping is disabled.
+        is enabled; otherwise, early stopping is disabled.
 
         .. versionadded:: 0.23
 

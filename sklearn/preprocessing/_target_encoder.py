@@ -116,7 +116,7 @@ class TargetEncoder(OneToOneFeatureMixin, _BaseEncoder):
         - an iterable yielding (train, test) splits as arrays of indices.
 
         For integer/None inputs, if `target_type` is `"continuous"`, :class:`KFold` is
-        used, otherwise :class:`StratifiedKFold` is used.
+        used; otherwise, :class:`StratifiedKFold` is used.
 
         Refer :ref:`User Guide <cross_validation>` for more information on
         cross-validation strategies.

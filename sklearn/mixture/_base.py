@@ -176,7 +176,7 @@ class BaseMixture(DensityMixin, BaseEstimator, metaclass=ABCMeta):
         which the model has the largest likelihood or lower bound. Within each
         trial, the method iterates between E-step and M-step for ``max_iter``
         times until the change of likelihood or lower bound is less than
-        ``tol``, otherwise, a ``ConvergenceWarning`` is raised.
+        ``tol``; otherwise, a ``ConvergenceWarning`` is raised.
         If ``warm_start`` is ``True``, then ``n_init`` is ignored and a single
         initialization is performed upon the first call. Upon consecutive
         calls, training starts where it left off.
@@ -207,7 +207,7 @@ class BaseMixture(DensityMixin, BaseEstimator, metaclass=ABCMeta):
         which the model has the largest likelihood or lower bound. Within each
         trial, the method iterates between E-step and M-step for `max_iter`
         times until the change of likelihood or lower bound is less than
-        `tol`, otherwise, a :class:`~sklearn.exceptions.ConvergenceWarning` is
+        `tol`; otherwise, a :class:`~sklearn.exceptions.ConvergenceWarning` is
         raised. After fitting, it predicts the most probable label for the
         input data points.
 
@@ -286,7 +286,7 @@ class BaseMixture(DensityMixin, BaseEstimator, metaclass=ABCMeta):
                     best_lower_bounds = current_lower_bounds
                     self.converged_ = converged
 
-        # Should only warn about convergence if max_iter > 0, otherwise
+        # Should only warn about convergence if max_iter > 0; otherwise, 
         # the user is assumed to have used 0-iters initialization
         # to get the initial means.
         if not self.converged_ and self.max_iter > 0:

@@ -40,7 +40,7 @@ RANDOM_STATE = 42
 def _classifier_has(attr):
     """Check if we can delegate a method to the underlying classifier.
 
-    First, we check the first fitted classifier if available, otherwise we
+    First, we check the first fitted classifier if available; otherwise, we
     check the unfitted classifier.
     """
     return lambda estimator: (

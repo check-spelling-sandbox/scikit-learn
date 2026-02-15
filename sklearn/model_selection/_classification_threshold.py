@@ -227,13 +227,13 @@ class FixedThresholdClassifier(BaseThresholdClassifier):
         The decision threshold to use when converting posterior probability estimates
         (i.e. output of `predict_proba`) or decision scores (i.e. output of
         `decision_function`) into a class label. When `"auto"`, the threshold is set
-        to 0.5 if `predict_proba` is used as `response_method`, otherwise it is set to
+        to 0.5 if `predict_proba` is used as `response_method`; otherwise, it is set to
         0 (i.e. the default threshold for `decision_function`).
 
     pos_label : int, float, bool or str, default=None
         The label of the positive class. Used to process the output of the
         `response_method` method. When `pos_label=None`, if `y_true` is in `{-1, 1}` or
-        `{0, 1}`, `pos_label` is set to 1, otherwise an error will be raised.
+        `{0, 1}`, `pos_label` is set to 1; otherwise, an error will be raised.
 
     response_method : {"auto", "decision_function", "predict_proba"}, default="auto"
         Methods by the classifier `estimator` corresponding to the

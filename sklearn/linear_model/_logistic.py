@@ -957,7 +957,7 @@ class LogisticRegression(LinearClassifierMixin, SparseCoefMixin, BaseEstimator):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization; otherwise, just erase the previous solution.
         Useless for liblinear solver. See :term:`the Glossary <warm_start>`.
 
         .. versionadded:: 0.17

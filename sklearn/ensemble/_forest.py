@@ -1182,7 +1182,7 @@ class RandomForestClassifier(ForestClassifier):
     Trees in the forest use the best split strategy, i.e. equivalent to passing
     `splitter="best"` to the underlying :class:`~sklearn.tree.DecisionTreeClassifier`.
     The sub-sample size is controlled with the `max_samples` parameter if
-    `bootstrap=True` (default), otherwise the whole dataset is used to build
+    `bootstrap=True` (default); otherwise, the whole dataset is used to build
     each tree.
 
     For a comparison between tree-based ensemble models see the example
@@ -1321,7 +1321,7 @@ class RandomForestClassifier(ForestClassifier):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`Glossary <warm_start>` and
         :ref:`tree_ensemble_warm_start` for details.
 
@@ -1585,7 +1585,7 @@ class RandomForestRegressor(ForestRegressor):
     Trees in the forest use the best split strategy, i.e. equivalent to passing
     `splitter="best"` to the underlying :class:`~sklearn.tree.DecisionTreeRegressor`.
     The sub-sample size is controlled with the `max_samples` parameter if
-    `bootstrap=True` (default), otherwise the whole dataset is used to build
+    `bootstrap=True` (default); otherwise, the whole dataset is used to build
     each tree.
 
     This estimator has native support for missing values (NaNs). During training,
@@ -1740,7 +1740,7 @@ class RandomForestRegressor(ForestRegressor):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`Glossary <warm_start>` and
         :ref:`tree_ensemble_warm_start` for details.
 
@@ -2108,7 +2108,7 @@ class ExtraTreesClassifier(ForestClassifier):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`Glossary <warm_start>` and
         :ref:`tree_ensemble_warm_start` for details.
 
@@ -2510,7 +2510,7 @@ class ExtraTreesRegressor(ForestRegressor):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`Glossary <warm_start>` and
         :ref:`tree_ensemble_warm_start` for details.
 
@@ -2824,7 +2824,7 @@ class RandomTreesEmbedding(TransformerMixin, BaseForest):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit a whole
+        and add more estimators to the ensemble; otherwise, just fit a whole
         new forest. See :term:`Glossary <warm_start>` and
         :ref:`tree_ensemble_warm_start` for details.
 

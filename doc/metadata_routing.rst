@@ -214,7 +214,7 @@ which accepts at least one metadata. For instance, if an estimator supports
 ``estimator.set_score_request(sample_weight=value)``. Here ``value`` can be:
 
 - ``True``: method requests a ``sample_weight``. This means if the metadata is provided,
-  it will be used, otherwise no error is raised.
+  it will be used; otherwise, no error is raised.
 - ``False``: method does not request a ``sample_weight``.
 - ``None``: router will raise an error if ``sample_weight`` is passed. This is in almost
   all cases the default value when an object is instantiated and ensures the user sets

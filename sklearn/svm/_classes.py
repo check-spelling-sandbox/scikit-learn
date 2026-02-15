@@ -430,7 +430,7 @@ class LinearSVR(RegressorMixin, LinearModel):
         `dual="auto"` will choose the value of the parameter automatically,
         based on the values of `n_samples`, `n_features` and `loss`. If
         `n_samples` < `n_features` and optimizer supports chosen `loss`,
-        then dual will be set to True, otherwise it will be set to False.
+        then dual will be set to True; otherwise, it will be set to False.
 
         .. versionchanged:: 1.3
            The `"auto"` option is added in version 1.3 and will be the default

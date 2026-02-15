@@ -52,7 +52,7 @@ def _cholesky_omp(X, y, n_nonzero_coefs, tol=None, copy_X=True, return_path=Fals
 
     copy_X : bool, default=True
         Whether the design matrix X must be copied by the algorithm. A false
-        value is only helpful if X is already Fortran-ordered, otherwise a
+        value is only helpful if X is already Fortran-ordered; otherwise, a
         copy is made anyway.
 
     return_path : bool, default=False
@@ -182,7 +182,7 @@ def _gram_omp(
 
     copy_Gram : bool, default=True
         Whether the gram matrix must be copied by the algorithm. A false
-        value is only helpful if it is already Fortran-ordered, otherwise a
+        value is only helpful if it is already Fortran-ordered; otherwise, a
         copy is made anyway.
 
     copy_Xy : bool, default=True
@@ -346,7 +346,7 @@ def orthogonal_mp(
 
     copy_X : bool, default=True
         Whether the design matrix X must be copied by the algorithm. A false
-        value is only helpful if X is already Fortran-ordered, otherwise a
+        value is only helpful if X is already Fortran-ordered; otherwise, a
         copy is made anyway.
 
     return_path : bool, default=False
@@ -518,7 +518,7 @@ def orthogonal_mp_gram(
 
     copy_Gram : bool, default=True
         Whether the gram matrix must be copied by the algorithm. A `False`
-        value is only helpful if it is already Fortran-ordered, otherwise a
+        value is only helpful if it is already Fortran-ordered; otherwise, a
         copy is made anyway.
 
     copy_Xy : bool, default=True
@@ -909,7 +909,7 @@ class OrthogonalMatchingPursuitCV(RegressorMixin, LinearModel):
     ----------
     copy : bool, default=True
         Whether the design matrix X must be copied by the algorithm. A false
-        value is only helpful if X is already Fortran-ordered, otherwise a
+        value is only helpful if X is already Fortran-ordered; otherwise, a
         copy is made anyway.
 
     fit_intercept : bool, default=True

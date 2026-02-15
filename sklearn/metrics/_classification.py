@@ -1397,7 +1397,7 @@ def zero_one_loss(y_true, y_pred, *, normalize=True, sample_weight=None):
     -----
     In multilabel classification, the zero_one_loss function corresponds to
     the subset zero-one loss: for each sample, the entire set of labels must be
-    correctly predicted, otherwise the loss for that sample is equal to one.
+    correctly predicted; otherwise, the loss for that sample is equal to one.
 
     Examples
     --------

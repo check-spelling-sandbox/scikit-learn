@@ -1007,7 +1007,7 @@ class BaseGradientBoosting(BaseEnsemble, metaclass=ABCMeta):
             The raw predictions of the input samples. The order of the
             classes corresponds to that in the attribute :term:`classes_`.
             Regression and binary classification are special cases with
-            ``k == 1``, otherwise ``k==n_classes``.
+            ``k == 1``; otherwise, ``k==n_classes``.
         """
         if check_input:
             X = validate_data(
@@ -1302,7 +1302,7 @@ class GradientBoostingClassifier(ClassifierMixin, BaseGradientBoosting):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just erase the
+        and add more estimators to the ensemble; otherwise, just erase the
         previous solution. See :term:`the Glossary <warm_start>`.
 
     validation_fraction : float, default=0.1
@@ -1402,7 +1402,7 @@ class GradientBoostingClassifier(ClassifierMixin, BaseGradientBoosting):
     estimators_ : ndarray of DecisionTreeRegressor of \
             shape (n_estimators, ``n_trees_per_iteration_``)
         The collection of fitted sub-estimators. ``n_trees_per_iteration_`` is 1 for
-        binary classification, otherwise ``n_classes``.
+        binary classification; otherwise, ``n_classes``.
 
     classes_ : ndarray of shape (n_classes,)
         The classes labels.
@@ -1623,7 +1623,7 @@ class GradientBoostingClassifier(ClassifierMixin, BaseGradientBoosting):
             the raw values predicted from the trees of the ensemble . The
             classes corresponds to that in the attribute :term:`classes_`.
             Regression and binary classification are special cases with
-            ``k == 1``, otherwise ``k==n_classes``.
+            ``k == 1``; otherwise, ``k==n_classes``.
         """
         yield from self._staged_raw_predict(X)
 
@@ -1919,7 +1919,7 @@ class GradientBoostingRegressor(RegressorMixin, BaseGradientBoosting):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just erase the
+        and add more estimators to the ensemble; otherwise, just erase the
         previous solution. See :term:`the Glossary <warm_start>`.
 
     validation_fraction : float, default=0.1

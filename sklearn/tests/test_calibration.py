@@ -271,7 +271,7 @@ def test_calibration_multiclass(method, ensemble, seed):
     # Check probabilities sum to 1
     assert_allclose(np.sum(probas, axis=1), np.ones(len(X_test)))
 
-    # Check that the dataset is not too trivial, otherwise it's hard
+    # Check that the dataset is not too trivial; otherwise, it's hard
     # to get interesting calibration data during the internal
     # cross-validation loop.
     assert 0.65 < clf.score(X_test, y_test) < 0.95

@@ -905,7 +905,7 @@ def _asarray_with_order(
     purpose of this helper is to make it possible to share code for data
     container validation without memory copies for both downstream use cases:
     the `order` parameter is only enforced if the input array implementation
-    is NumPy based, otherwise `order` is just silently ignored.
+    is NumPy based; otherwise, `order` is just silently ignored.
     """
     xp, _ = get_namespace(array, xp=xp)
     if _is_numpy_namespace(xp):

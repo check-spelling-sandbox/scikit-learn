@@ -249,7 +249,7 @@ class DetCurveDisplay(_BinaryClassifierCurveDisplayMixin):
 
         pos_label : int, float, bool or str, default=None
             The label of the positive class. When `pos_label=None`, if `y_true`
-            is in {-1, 1} or {0, 1}, `pos_label` is set to 1, otherwise an
+            is in {-1, 1} or {0, 1}, `pos_label` is set to 1; otherwise, an
             error will be raised.
 
         name : str, default=None
@@ -333,7 +333,7 @@ class DetCurveDisplay(_BinaryClassifierCurveDisplayMixin):
 
         name : str, default=None
             Name of DET curve for labeling. If `None`, use `estimator_name` if
-            it is not `None`, otherwise no labeling is shown.
+            it is not `None`; otherwise, no labeling is shown.
 
         **kwargs : dict
             Additional keywords arguments passed to matplotlib `plot` function.

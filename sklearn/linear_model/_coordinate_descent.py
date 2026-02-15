@@ -839,7 +839,7 @@ class ElasticNet(MultiOutputMixin, RegressorMixin, LinearModel):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization; otherwise, just erase the previous solution.
         See :term:`the Glossary <warm_start>`.
 
     positive : bool, default=False
@@ -1260,7 +1260,7 @@ class Lasso(ElasticNet):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization; otherwise, just erase the previous solution.
         See :term:`the Glossary <warm_start>`.
 
     positive : bool, default=False
@@ -2588,7 +2588,7 @@ class MultiTaskElasticNet(Lasso):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization; otherwise, just erase the previous solution.
         See :term:`the Glossary <warm_start>`.
 
     random_state : int, RandomState instance, default=None
@@ -2833,7 +2833,7 @@ class MultiTaskLasso(MultiTaskElasticNet):
 
     warm_start : bool, default=False
         When set to ``True``, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization; otherwise, just erase the previous solution.
         See :term:`the Glossary <warm_start>`.
 
     random_state : int, RandomState instance, default=None

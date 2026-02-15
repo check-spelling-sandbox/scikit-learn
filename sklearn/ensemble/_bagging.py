@@ -162,7 +162,7 @@ def _parallel_build_estimators(
 
         # Note: Row sampling can be achieved either through setting sample_weight or
         # by indexing. The former is more memory efficient. Therefore, use this method
-        # if possible, otherwise use indexing.
+        # if possible; otherwise, use indexing.
         if consumes_sample_weight:
             # Row sampling by setting sample_weight
             indices_as_sample_weight = np.bincount(indices, minlength=n_samples)
@@ -751,7 +751,7 @@ class BaggingClassifier(ClassifierMixin, BaseBagging):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit
+        and add more estimators to the ensemble; otherwise, just fit
         a whole new ensemble. See :term:`the Glossary <warm_start>`.
 
         .. versionadded:: 0.17
@@ -1153,7 +1153,7 @@ class BaggingClassifier(ClassifierMixin, BaseBagging):
             The decision function of the input samples. The columns correspond
             to the classes in sorted order, as they appear in the attribute
             ``classes_``. Regression and binary classification are special
-            cases with ``k == 1``, otherwise ``k==n_classes``.
+            cases with ``k == 1``; otherwise, ``k==n_classes``.
         """
         _raise_for_params(params, self, "decision_function")
 
@@ -1263,7 +1263,7 @@ class BaggingRegressor(RegressorMixin, BaseBagging):
 
     warm_start : bool, default=False
         When set to True, reuse the solution of the previous call to fit
-        and add more estimators to the ensemble, otherwise, just fit
+        and add more estimators to the ensemble; otherwise, just fit
         a whole new ensemble. See :term:`the Glossary <warm_start>`.
 
     n_jobs : int, default=None
