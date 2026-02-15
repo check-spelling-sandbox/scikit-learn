@@ -187,7 +187,7 @@ pd.DataFrame(results).set_index("model").style.apply(highlight_min)
 #
 # Note that the conditional median estimator is competitive with the squared
 # error estimator in terms of MSE on the test set: this can be explained by
-# the fact the squared error estimator is very sensitive to large outliers
+# the fact that the squared error estimator is very sensitive to large outliers
 # which can cause significant overfitting. This can be seen on the right hand
 # side of the previous plot. The conditional median estimator is biased
 # (underestimation for this asymmetric noise) but is also naturally robust to

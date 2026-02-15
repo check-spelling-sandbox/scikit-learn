@@ -252,7 +252,7 @@ each other. Let us have a look at
 
 **Maintainer perspective:**
 They all do in principle the same and are different only by the penalty they
-impose. This, however, has a large impact on the way the underlying
+impose. This, however, has a large impact on the way that the underlying
 optimization problem is solved. In the end, this amounts to usage of different
 methods and tricks from linear algebra. A special case is
 :class:`~linear_model.SGDRegressor` which

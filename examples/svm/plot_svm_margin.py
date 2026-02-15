@@ -2,7 +2,7 @@
 =========================================================
 SVM Margins Example
 =========================================================
-The plots below illustrate the effect the parameter `C` has
+The plots below illustrate the effect that the parameter `C` has
 on the separation line. A large value of `C` basically tells
 our model that we do not have that much faith in our data's
 distribution, and will only consider points close to line

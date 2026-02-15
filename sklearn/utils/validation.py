@@ -1714,7 +1714,7 @@ def _estimator_has(attr, *, delegates=("estimator_", "estimator")):
     Parameters
     ----------
     attr : str
-        Name of the attribute the delegate might or might not have.
+        Name of the attribute that the delegate might or might not have.
 
     delegates: tuple of str, default=("estimator_", "estimator")
         A tuple of sub-estimator(s) to check if we can delegate the `attr` method.

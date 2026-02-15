@@ -2379,7 +2379,7 @@ def test_encoder_not_fitted(Encoder):
     """Check that we raise a `NotFittedError` by calling transform before fit with
     the encoders.
 
-    One could expect that the passing the `categories` argument to the encoder
+    One could expect that passing the `categories` argument to the encoder
     would make it stateless. However, `fit` is making a couple of check, such as the
     position of `np.nan`.
     """
