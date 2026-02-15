@@ -153,7 +153,7 @@ def test_binary_search_neighbors():
     distances = pairwise_distances(data)
     P1 = _binary_search_perplexity(distances, desired_perplexity, verbose=0)
 
-    # Test that when we use all the neighbors the results are identical
+    # Test that when we use all the neighbors, the results are identical
     n_neighbors = n_samples - 1
     nn = NearestNeighbors().fit(data)
     distance_graph = nn.kneighbors_graph(n_neighbors=n_neighbors, mode="distance")
