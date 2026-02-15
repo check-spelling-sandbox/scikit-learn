@@ -43,7 +43,7 @@ or with conda::
 # HDBSCAN: hierarchical density-based clustering
 # ----------------------------------------------
 # Originally hosted in the scikit-learn-contrib repository, :class:`cluster.HDBSCAN`
-# has been adpoted into scikit-learn. It's missing a few features from the original
+# has been adopted into scikit-learn. It's missing a few features from the original
 # implementation which will be added in future releases.
 # By performing a modified version of :class:`cluster.DBSCAN` over multiple epsilon
 # values simultaneously, :class:`cluster.HDBSCAN` finds clusters of varying densities
