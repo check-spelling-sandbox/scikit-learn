@@ -210,7 +210,7 @@ def get_message(log_file, repo_str, pr_number, sha, run_id, details, versions):
         + "hooks. See [instructions to enable them]("
         + "https://scikit-learn.org/dev/developers/development_setup.html#set-up-pre-commit)"
         + ".\n\n"
-        + "You can see the details of the linting issues under the `lint` job [here]"
+        + "You can see the details of the linting issues under the [`lint` job]"
         + f"(https://github.com/{repo_str}/actions/runs/{run_id})\n\n"
         + message
         + sub_text
