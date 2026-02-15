@@ -176,7 +176,7 @@ the number of features and components, it may use a lot of memory.
 When the ``inverse_transform`` method is called, it computes the product of the
 input ``X`` and the transpose of the inverse components. If the inverse components have
 been computed during fit, they are reused at each call to ``inverse_transform``.
-Otherwise they are recomputed each time, which can be costly. The result is always
+Otherwise, they are recomputed each time, which can be costly. The result is always
 dense, even if ``X`` is sparse.
 
 Here is a small code example which illustrates how to use the inverse transform

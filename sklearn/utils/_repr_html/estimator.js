@@ -95,7 +95,7 @@ function detectTheme(element) {
             // If the text is very dark we have a light theme
             return 'light';
         }
-        // Otherwise fall back to the next heuristic.
+        // Otherwise, fall back to the next heuristic.
     }
 
     // Fallback to system preference

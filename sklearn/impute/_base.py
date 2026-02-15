@@ -330,7 +330,7 @@ class SimpleImputer(_BaseImputer):
     def _validate_input(self, X, in_fit):
         if self.strategy in ("most_frequent", "constant"):
             # If input is a list of strings, dtype = object.
-            # Otherwise ValueError is raised in SimpleImputer
+            # Otherwise, ValueError is raised in SimpleImputer
             # with strategy='most_frequent' or 'constant'
             # because the list is converted to Unicode numpy array
             if isinstance(X, list) and any(

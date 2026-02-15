@@ -302,7 +302,7 @@ class _BaseEncoder(TransformerMixin, BaseEstimator):
         -------
         output : ndarray of shape (n_infrequent_categories,) or None
             If there are infrequent categories, indices of infrequent
-            categories. Otherwise None.
+            categories. Otherwise, None.
         """
         if isinstance(self.min_frequency, numbers.Integral):
             infrequent_mask = category_count < self.min_frequency

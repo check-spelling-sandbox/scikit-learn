@@ -846,7 +846,7 @@ class MinCovDet(EmpiricalCovariance):
         """
 
         # Check that the covariance of the support data is not equal to 0.
-        # Otherwise self.dist_ = 0 and thus correction = 0.
+        # Otherwise, self.dist_ = 0 and thus correction = 0.
         n_samples = len(self.dist_)
         n_support = np.sum(self.support_)
         n_features = self.raw_covariance_.shape[0]

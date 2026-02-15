@@ -1686,7 +1686,7 @@ class HistGradientBoostingRegressor(RegressorMixin, BaseHistGradientBoosting):
         Indicates whether early stopping is used during training.
     n_iter_ : int
         The number of iterations as selected by early stopping, depending on
-        the `early_stopping` parameter. Otherwise it corresponds to max_iter.
+        the `early_stopping` parameter. Otherwise, it corresponds to max_iter.
     n_trees_per_iteration_ : int
         The number of tree that are built at each iteration. For regressors,
         this is always 1.
@@ -2091,7 +2091,7 @@ class HistGradientBoostingClassifier(ClassifierMixin, BaseHistGradientBoosting):
         Indicates whether early stopping is used during training.
     n_iter_ : int
         The number of iterations as selected by early stopping, depending on
-        the `early_stopping` parameter. Otherwise it corresponds to max_iter.
+        the `early_stopping` parameter. Otherwise, it corresponds to max_iter.
     n_trees_per_iteration_ : int
         The number of tree that are built at each iteration. This is equal to 1
         for binary classification, and to ``n_classes`` for multiclass

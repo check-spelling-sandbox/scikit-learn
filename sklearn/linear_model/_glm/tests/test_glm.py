@@ -397,7 +397,7 @@ def test_glm_regression_unpenalized(solver, fit_intercept, glm_dataset):
                 assert model.intercept_ == pytest.approx(intercept)
                 assert_allclose(model.coef_, coef, rtol=rtol)
         elif solver == "lbfgs" and fit_intercept:
-            # But it is not the minimum norm solution. Otherwise the norms would be
+            # But it is not the minimum norm solution. Otherwise, the norms would be
             # equal.
             assert norm_model > (1 + 1e-12) * norm_solution
 
@@ -485,7 +485,7 @@ def test_glm_regression_unpenalized_hstacked_X(solver, fit_intercept, glm_datase
         assert_allclose(model.predict(X), y, rtol=rtol)
         if (solver == "lbfgs" and fit_intercept) or solver == "newton-cholesky":
             # Same as in test_glm_regression_unpenalized.
-            # But it is not the minimum norm solution. Otherwise the norms would be
+            # But it is not the minimum norm solution. Otherwise, the norms would be
             # equal.
             norm_solution = np.linalg.norm(
                 0.5 * np.r_[intercept, intercept, coef, coef]
@@ -565,7 +565,7 @@ def test_glm_regression_unpenalized_vstacked_X(solver, fit_intercept, glm_datase
                 assert_allclose(model.coef_, coef, rtol=1e-4)
         elif solver == "lbfgs" and fit_intercept:
             # Same as in test_glm_regression_unpenalized.
-            # But it is not the minimum norm solution. Otherwise the norms would be
+            # But it is not the minimum norm solution. Otherwise, the norms would be
             # equal.
             assert norm_model > (1 + 1e-12) * norm_solution
         else:

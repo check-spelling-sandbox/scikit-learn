@@ -815,7 +815,7 @@ class MultiLabelBinarizer(TransformerMixin, BaseEstimator, auto_wrap_output_keys
     ----------
     classes_ : ndarray of shape (n_classes,)
         A copy of the `classes` parameter when provided.
-        Otherwise it corresponds to the sorted set of classes found
+        Otherwise, it corresponds to the sorted set of classes found
         when fitting.
 
     See Also

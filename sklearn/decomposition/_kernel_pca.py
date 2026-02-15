@@ -97,7 +97,7 @@ class KernelPCA(ClassNamePrefixFeaturesOutMixin, TransformerMixin, BaseEstimator
             (the number of training samples) and `n_components`:
             if the number of components to extract is less than 10 (strict) and
             the number of samples is more than 200 (strict), the 'arpack'
-            method is enabled. Otherwise the exact full eigenvalue
+            method is enabled. Otherwise, the exact full eigenvalue
             decomposition is computed and optionally truncated afterwards
             ('dense' method).
         dense :

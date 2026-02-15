@@ -1656,7 +1656,7 @@ def laplacian_kernel(X, Y=None, gamma=None):
         An optional second feature array. If `None`, uses `Y=X`.
 
     gamma : float, default=None
-        If None, defaults to 1.0 / n_features. Otherwise it should be strictly positive.
+        If None, defaults to 1.0 / n_features. Otherwise, it should be strictly positive.
 
     Returns
     -------

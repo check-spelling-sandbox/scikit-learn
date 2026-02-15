@@ -1349,7 +1349,7 @@ class GradientBoostingClassifier(ClassifierMixin, BaseGradientBoosting):
     ----------
     n_estimators_ : int
         The number of estimators as selected by early stopping (if
-        ``n_iter_no_change`` is specified). Otherwise it is set to
+        ``n_iter_no_change`` is specified). Otherwise, it is set to
         ``n_estimators``.
 
         .. versionadded:: 0.20
@@ -1966,7 +1966,7 @@ class GradientBoostingRegressor(RegressorMixin, BaseGradientBoosting):
     ----------
     n_estimators_ : int
         The number of estimators as selected by early stopping (if
-        ``n_iter_no_change`` is specified). Otherwise it is set to
+        ``n_iter_no_change`` is specified). Otherwise, it is set to
         ``n_estimators``.
 
     n_trees_per_iteration_ : int

@@ -762,7 +762,7 @@ class AdditiveChi2Sampler(TransformerMixin, BaseEstimator):
             Transformed feature names.
         """
         # Note that passing attributes="n_features_in_" forces check_is_fitted
-        # to check if the attribute is present. Otherwise it will pass on this
+        # to check if the attribute is present. Otherwise, it will pass on this
         # stateless estimator (requires_fit=False)
         check_is_fitted(self, attributes="n_features_in_")
         input_features = _check_feature_names_in(

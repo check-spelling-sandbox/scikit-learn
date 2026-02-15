@@ -374,7 +374,7 @@ def get_namespace(
       with sklearn.config_context(array_api_dispatch=True):
           # your code here
 
-    Otherwise `array_api_compat.numpy` is
+    Otherwise, `array_api_compat.numpy` is
     always returned irrespective of the fact that arrays implement the
     `__array_namespace__` protocol or not.
 
@@ -499,12 +499,12 @@ def move_to(*arrays, xp, device):
     """Move all arrays to `xp` and `device`.
 
     Each array will be moved to the reference namespace and device if
-    it is not already using it. Otherwise the array is left unchanged.
+    it is not already using it. Otherwise, the array is left unchanged.
 
     `array` may contain `None` entries, these are left unchanged.
 
     Sparse arrays are accepted (as pass through) if the reference namespace is
-    NumPy, in which case they are returned unchanged. Otherwise a `TypeError`
+    NumPy, in which case they are returned unchanged. Otherwise, a `TypeError`
     is raised.
 
     Parameters

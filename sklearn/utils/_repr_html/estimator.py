@@ -66,7 +66,7 @@ class _VisualBlock:
 
     doc_link_label : str, default=None
         The label for the documentation link. If provided, the label would be
-        "Documentation for {doc_link_label}". Otherwise it will look for `names`.
+        "Documentation for {doc_link_label}". Otherwise, it will look for `names`.
         Only active when kind == 'single'.
 
     dash_wrapped : bool, default=True
@@ -141,7 +141,7 @@ def _write_label_html(
         The caption below the name. If `None`, no caption will be created.
     doc_link_label : str, default=None
         The label for the documentation link. If provided, the label would be
-        "Documentation for {doc_link_label}". Otherwise it will look for `name`.
+        "Documentation for {doc_link_label}". Otherwise, it will look for `name`.
     outer_class : {"sk-label-container", "sk-item"}, default="sk-label-container"
         The CSS class for the outer container.
     inner_class : {"sk-label", "sk-estimator"}, default="sk-label"

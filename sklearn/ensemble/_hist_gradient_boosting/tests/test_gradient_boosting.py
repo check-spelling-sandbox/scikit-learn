@@ -595,7 +595,7 @@ def test_missing_values_minmax_imputation():
             assert any(np.isnan(X[:, feature_idx]))
 
         # Let's use a test set to check that the learned decision function is
-        # the same as evaluated on unseen data. Otherwise it could just be the
+        # the same as evaluated on unseen data. Otherwise, it could just be the
         # case that we find two independent ways to overfit the training set.
         return train_test_split(X, y, random_state=rng)
 

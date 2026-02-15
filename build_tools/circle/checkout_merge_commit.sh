@@ -2,7 +2,7 @@
 
 
 # Add `main` branch to the update list.
-# Otherwise CircleCI will give us a cached one.
+# Otherwise, CircleCI will give us a cached one.
 FETCH_REFS="+main:main"
 
 # Update PR refs for testing.

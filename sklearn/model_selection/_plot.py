@@ -342,7 +342,7 @@ class LearningCurveDisplay(_BaseCurveDisplay):
             to generate the learning curve. If the dtype is float, it is
             regarded as a fraction of the maximum size of the training set
             (that is determined by the selected validation method), i.e. it has
-            to be within (0, 1]. Otherwise it is interpreted as absolute sizes
+            to be within (0, 1]. Otherwise, it is interpreted as absolute sizes
             of the training sets. Note that for classification the number of
             samples usually have to be big enough to contain at least one
             sample from each class.

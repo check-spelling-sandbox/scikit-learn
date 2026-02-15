@@ -85,7 +85,7 @@ def _sparse_encode_precomputed(
     regularization : int or float, default=None
         The regularization parameter. It corresponds to alpha when
         algorithm is `'lasso_lars'`, `'lasso_cd'` or `'threshold'`.
-        Otherwise it corresponds to `n_nonzero_coefs`.
+        Otherwise, it corresponds to `n_nonzero_coefs`.
 
     init : ndarray of shape (n_samples, n_components), default=None
         Initialization value of the sparse code. Only used if

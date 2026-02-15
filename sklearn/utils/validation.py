@@ -784,7 +784,7 @@ def check_array(
 
     force_writeable : bool, default=False
         Whether to force the output array to be writeable. If True, the returned array
-        is guaranteed to be writeable, which may require a copy. Otherwise the
+        is guaranteed to be writeable, which may require a copy. Otherwise, the
         writeability of the input array is preserved.
 
         .. versionadded:: 1.6
@@ -1233,7 +1233,7 @@ def check_X_y(
 
     force_writeable : bool, default=False
         Whether to force the output array to be writeable. If True, the returned array
-        is guaranteed to be writeable, which may require a copy. Otherwise the
+        is guaranteed to be writeable, which may require a copy. Otherwise, the
         writeability of the input array is preserved.
 
         .. versionadded:: 1.6
@@ -1445,7 +1445,7 @@ def check_random_state(seed):
         If seed is None, return the RandomState singleton used by np.random.
         If seed is an int, return a new RandomState instance seeded with seed.
         If seed is already a RandomState instance, return it.
-        Otherwise raise ValueError.
+        Otherwise, raise ValueError.
 
     Returns
     -------
@@ -1917,7 +1917,7 @@ def _check_psd_eigenvalues(lambdas, enable_warnings=False):
 
     - that there are no significant imaginary parts in eigenvalues (more than
       1e-5 times the maximum real part). If this check fails, it raises a
-      ``ValueError``. Otherwise all non-significant imaginary parts that may
+      ``ValueError``. Otherwise, all non-significant imaginary parts that may
       remain are set to zero. This operation is traced with a
       ``PositiveSpectrumWarning`` when ``enable_warnings=True``.
 
@@ -1927,7 +1927,7 @@ def _check_psd_eigenvalues(lambdas, enable_warnings=False):
     - that there are no significant negative eigenvalues with absolute value
       more than 1e-10 (1e-6) and more than 1e-5 (5e-3) times the largest
       positive eigenvalue in double (simple) precision. If this check fails,
-      it raises a ``ValueError``. Otherwise all negative eigenvalues that may
+      it raises a ``ValueError``. Otherwise, all negative eigenvalues that may
       remain are set to zero. This operation is traced with a
       ``PositiveSpectrumWarning`` when ``enable_warnings=True``.
 
@@ -1944,7 +1944,7 @@ def _check_psd_eigenvalues(lambdas, enable_warnings=False):
     enable_warnings : bool, default=False
         When this is set to ``True``, a ``PositiveSpectrumWarning`` will be
         raised when there are imaginary parts, negative eigenvalues, or
-        extremely small non-zero eigenvalues. Otherwise no warning will be
+        extremely small non-zero eigenvalues. Otherwise, no warning will be
         raised. In both cases, imaginary parts, negative eigenvalues, and
         extremely small non-zero eigenvalues will be set to zero.
 
@@ -2369,7 +2369,7 @@ def _get_feature_names(X):
             f"but your input has {types} as feature name / column name types. "
             "If you want feature names to be stored and validated, you must convert "
             "them all to strings, by using X.columns = X.columns.astype(str) for "
-            "example. Otherwise you can remove feature / column names from your input "
+            "example. Otherwise, you can remove feature / column names from your input "
             "data, or convert them all to a non-string data type."
         )
 

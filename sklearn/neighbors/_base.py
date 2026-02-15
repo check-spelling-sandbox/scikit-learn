@@ -968,7 +968,7 @@ class KNeighborsMixin:
             If not provided, neighbors of each indexed point are returned.
             In this case, the query point is not considered its own neighbor.
             For ``metric='precomputed'`` the shape should be
-            (n_queries, n_indexed). Otherwise the shape should be
+            (n_queries, n_indexed). Otherwise, the shape should be
             (n_queries, n_features).
 
         n_neighbors : int, default=None

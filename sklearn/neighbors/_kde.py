@@ -81,7 +81,7 @@ class KernelDensity(BaseEstimator):
 
     breadth_first : bool, default=True
         If true (default), use a breadth-first approach to the problem.
-        Otherwise use a depth-first approach.
+        Otherwise, use a depth-first approach.
 
     leaf_size : int, default=40
         Specify the leaf size of the underlying tree.  See :class:`BallTree`
