@@ -670,7 +670,7 @@ evaluate(cyclic_spline_poly_pipeline, X, y, cv=ts_cv)
 #
 # Note that while the final step of this pipeline is a linear regression model,
 # the intermediate steps such as the spline feature extraction and the Nyström
-# kernel approximation are highly non-linear. As a result the compound pipeline
+# kernel approximation are highly non-linear. As a result, the compound pipeline
 # is much more expressive than a simple linear regression model with raw features.
 #
 # For the sake of completeness, we also evaluate the combination of one-hot

@@ -364,7 +364,7 @@ def test_pca_solver_equivalence(
     assert stable.sum() > 1
     assert_allclose(reference_components[stable], other_components[stable], **tols)
 
-    # As a result the output of fit_transform should be the same:
+    # As a result, the output of fit_transform should be the same:
     assert_allclose(
         X_trans_other_train[:, stable], X_trans_full_train[:, stable], **tols
     )

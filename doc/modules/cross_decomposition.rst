@@ -117,7 +117,7 @@ which corresponds to the `'nipals'` option of the `algorithm` parameter.
 
   Then, we have :math:`Y = \Omega \Delta^T = \alpha \Xi \Delta^T`, and since
   :math:`\Xi` is the transformed training data we have that :math:`Y = X \alpha
-  P \Delta^T`, and as a result the coefficient matrix :math:`\beta = \alpha P
+  P \Delta^T`, and as a result, the coefficient matrix :math:`\beta = \alpha P
   \Delta^T`.
 
   :math:`\beta` can be accessed through the `coef_` attribute.
