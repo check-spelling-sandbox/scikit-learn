@@ -207,7 +207,7 @@ def test_subcluster_dtype(global_dtype):
 
 
 def test_both_subclusters_updated():
-    """Check that both subclusters are updated when a node a split, even when there are
+    """Check that both subclusters are updated when a node is split, even when there are
     duplicated data points. Non-regression test for #23269.
     """
 
