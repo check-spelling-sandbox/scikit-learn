@@ -888,7 +888,7 @@ def _sigmoid_calibration(
 
     # If the predictions have large values we scale them in order to bring
     # them within a suitable range. This has no effect on the final
-    # (prediction) result because linear models like Logisitic Regression
+    # (prediction) result because linear models like Logistic Regression
     # without a penalty are invariant to multiplying the features by a
     # constant.
     if max_prediction >= max_abs_prediction_threshold:
