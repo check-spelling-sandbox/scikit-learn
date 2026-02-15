@@ -466,7 +466,7 @@ def estimator_html_repr(estimator):
         # fallback message is shown by default.
         #
         # The reverse logic applies to HTML repr div.sk-container.
-        # div.sk-container is hidden by default and the loading the CSS displays it.
+        # div.sk-container is hidden by default and loading the CSS displays it.
         fallback_msg = (
             "In a Jupyter environment, please rerun this cell to show the HTML"
             " representation or trust the notebook. <br />On GitHub, the"
