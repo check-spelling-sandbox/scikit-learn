@@ -182,7 +182,7 @@ class _BinaryClassifierCurveDisplayMixin:
 
         if isinstance(curve_kwargs, list) and len(curve_kwargs) != n_curves:
             raise ValueError(
-                f"`curve_kwargs` must be None, a dictionary or a list of length "
+                f"`curve_kwargs` must be None, a dictionary, or a list of length "
                 f"{n_curves}. Got: {curve_kwargs}."
             )
 

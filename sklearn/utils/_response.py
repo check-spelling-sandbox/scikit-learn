@@ -130,7 +130,7 @@ def _get_response_values(
         - with response_method="predict", it is a 1d array of shape `(n_samples,)`;
         - otherwise, it is a 2d array of shape `(n_samples, n_classes)`;
     - for multilabel classification, it is a 2d array of shape `(n_samples, n_outputs)`;
-    - for outlier detection, a regressor or a clusterer, it is a 1d array of shape
+    - for outlier detection, a regressor, or a clusterer, it is a 1d array of shape
       `(n_samples,)`.
 
     If `estimator` is a binary classifier, also return the label for the
