@@ -827,7 +827,7 @@ datasets**:
 
 - it is not easily possible to split the vectorization work into concurrent sub
   tasks as the ``vocabulary_`` attribute would have to be a shared state with a
-  fine grained synchronization barrier: the mapping from token string to
+  fine-grained synchronization barrier: the mapping from token string to
   feature index is dependent on the ordering of the first occurrence of each token
   hence would have to be shared, potentially harming the concurrent workers'
   performance to the point of making them slower than the sequential variant.

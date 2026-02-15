@@ -503,7 +503,7 @@ class HDBSCAN(ClusterMixin, BaseEstimator):
         standard approach for HDBSCAN* is to use an Excess of Mass (`"eom"`)
         algorithm to find the most persistent clusters. Alternatively you can
         instead select the clusters at the leaves of the tree -- this provides
-        the most fine grained and homogeneous clusters.
+        the most fine-grained and homogeneous clusters.
 
     allow_single_cluster : bool, default=False
         By default HDBSCAN* will not produce a single cluster, setting this
