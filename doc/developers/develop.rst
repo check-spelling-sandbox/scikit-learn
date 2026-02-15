@@ -289,7 +289,7 @@ the correct interface more easily.
     * an initial test suite including use of :func:`~utils.parametrize_with_checks`
     * directory structures and scripts to compile documentation and example
       galleries
-    * scripts to manage continuous integration (testing on Linux, MacOS, and Windows)
+    * scripts to manage continuous integration (testing on Linux, macOS, and Windows)
     * instructions from getting started to publishing on `PyPi <https://pypi.org/>`__
 
 .. topic:: :class:`base.BaseEstimator` and mixins:

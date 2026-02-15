@@ -13,7 +13,7 @@ Tips to ease development
 
 * Time spent reading `Cython's documentation <https://cython.readthedocs.io/en/latest/>`_ is not time lost.
 
-* If you intend to use OpenMP: On MacOS, system's distribution of ``clang`` does not implement OpenMP.
+* If you intend to use OpenMP: On macOS, system's distribution of ``clang`` does not implement OpenMP.
   You can install the ``compilers`` package available on ``conda-forge`` which comes with an implementation of OpenMP.
 
 * Activating `checks <https://github.com/scikit-learn/scikit-learn/blob/62a017efa047e9581ae7df8bbaa62cf4c0544ee4/sklearn/_build_utils/__init__.py#L68-L87>`_ might help. E.g. for activating boundscheck use:

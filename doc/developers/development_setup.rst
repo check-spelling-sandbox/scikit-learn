@@ -171,7 +171,7 @@ the required packages.
               joblib threadpoolctl pre-commit
 
 
-    .. tab-item:: MacOS
+    .. tab-item:: macOS
       :class-label: tab-4
 
       .. tab-set::

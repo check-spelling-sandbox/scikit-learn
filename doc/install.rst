@@ -93,7 +93,7 @@ Installing the latest release
 
           .. include:: ./install_instructions_conda.rst
 
-    .. tab-item:: MacOS
+    .. tab-item:: macOS
       :class-label: tab-4
 
       .. tab-set::

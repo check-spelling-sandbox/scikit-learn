@@ -15,7 +15,7 @@ ifeq ($(CI), true)
     # On CircleCI using -j2 does not seem to speed up the html-noplot build
     SPHINX_NUMJOBS_NOPLOT_DEFAULT=1
 else ifeq ($(shell uname), Darwin)
-    # Avoid stalling issues on MacOS
+    # Avoid stalling issues on macOS
     SPHINX_NUMJOBS_NOPLOT_DEFAULT=1
 else
     SPHINX_NUMJOBS_NOPLOT_DEFAULT=auto
@@ -75,7 +75,7 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/stable"
 
-# Default to SPHINX_NUMJOBS=auto (except on MacOS and CI) since this makes
+# Default to SPHINX_NUMJOBS=auto (except on macOS and CI) since this makes
 # html-noplot build faster
 html-noplot: SPHINX_NUMJOBS ?= $(SPHINX_NUMJOBS_NOPLOT_DEFAULT)
 html-noplot:

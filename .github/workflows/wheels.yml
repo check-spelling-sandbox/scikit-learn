@@ -155,7 +155,7 @@ jobs:
             platform_id: manylinux_aarch64
             manylinux_image: manylinux_2_28
 
-          # MacOS x86_64
+          # macOS x86_64
           - os: macos-15-intel
             python: 311
             platform_id: macosx_x86_64
@@ -176,7 +176,7 @@ jobs:
             python: 314t
             platform_id: macosx_x86_64
 
-          # MacOS arm64
+          # macOS arm64
           - os: macos-14
             python: 311
             platform_id: macosx_arm64
