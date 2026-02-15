@@ -245,7 +245,7 @@ def test_display_curve_name_overwritten_by_plot_multiple_calls(
     clf = LogisticRegression().fit(X, y)
     y_pred = clf.predict_proba(X)[:, 1]
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     if constructor_name == "from_estimator":

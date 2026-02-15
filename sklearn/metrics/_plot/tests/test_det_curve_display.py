@@ -40,7 +40,7 @@ def test_det_curve_display(
     y_score = getattr(lr, response_method)(X)
     if y_score.ndim == 2:
         y_score = y_score[:, 1]
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     common_kwargs = {

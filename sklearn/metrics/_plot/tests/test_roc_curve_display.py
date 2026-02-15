@@ -642,7 +642,7 @@ def test_plot_roc_curve_despine(pyplot, data_binary, despine, constructor_name):
 
     y_pred = lr.decision_function(X)
 
-    # safe guard for the if/else construction
+    # safeguard for the if/else construction
     assert constructor_name in ("from_estimator", "from_predictions", "from_cv_results")
 
     if constructor_name == "from_estimator":

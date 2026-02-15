@@ -35,7 +35,7 @@ def test_precision_recall_display_plotting(
     y_score = getattr(classifier, response_method)(X)
     y_score = y_score if y_score.ndim == 1 else y_score[:, pos_label]
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     if constructor_name == "from_estimator":
@@ -142,7 +142,7 @@ def test_precision_recall_display_name(pyplot, constructor_name, default_label):
 
     y_score = classifier.predict_proba(X)[:, pos_label]
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     if constructor_name == "from_estimator":
@@ -366,7 +366,7 @@ def test_plot_precision_recall_despine(pyplot, despine, constructor_name):
 
     y_score = clf.decision_function(X)
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     if constructor_name == "from_estimator":

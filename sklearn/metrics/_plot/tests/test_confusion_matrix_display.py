@@ -58,7 +58,7 @@ def test_confusion_matrix_display_custom_labels(
     classifier = SVC().fit(X, y)
     y_pred = classifier.predict(X)
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     ax = pyplot.gca()
@@ -111,7 +111,7 @@ def test_confusion_matrix_display_plotting(
     classifier = SVC().fit(X, y)
     y_pred = classifier.predict(X)
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     ax = pyplot.gca()
@@ -184,7 +184,7 @@ def test_confusion_matrix_display(pyplot, constructor_name):
     classifier = SVC().fit(X, y)
     y_pred = classifier.predict(X)
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     cm = confusion_matrix(y, y_pred)
@@ -308,7 +308,7 @@ def test_confusion_matrix_with_unknown_labels(pyplot, constructor_name):
     # in 'classifier.classes_'
     y = y + 1
 
-    # safe guard for the binary if/else construction
+    # safeguard for the binary if/else construction
     assert constructor_name in ("from_estimator", "from_predictions")
 
     common_kwargs = {"labels": None}
