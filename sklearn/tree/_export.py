@@ -674,7 +674,7 @@ class _MPLTreeExporter(_BaseTreeExporter):
 
         anns = [ann for ann in ax.get_children() if isinstance(ann, Annotation)]
 
-        # update sizes of all bboxes
+        # update sizes of all boxes
         renderer = ax.figure.canvas.get_renderer()
 
         for ann in anns:
