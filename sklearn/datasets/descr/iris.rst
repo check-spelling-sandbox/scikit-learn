@@ -58,6 +58,6 @@ latter are NOT linearly separable from each other.
     Intelligence, Vol. PAMI-2, No. 1, 67-71.
   - Gates, G.W. (1972) "The Reduced Nearest Neighbor Rule".  IEEE Transactions
     on Information Theory, May 1972, 431-433.
-  - See also: 1988 MLC Proceedings, 54-64.  Cheeseman et al"s AUTOCLASS II
+  - See also: 1988 MLC Proceedings, 54-64.  Cheeseman et al's AUTOCLASS II
     conceptual clustering system finds 3 classes in the data.
   - Many, many more ...
