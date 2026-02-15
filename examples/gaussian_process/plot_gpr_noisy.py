@@ -80,7 +80,7 @@ _ = plt.ylabel("y")
 # non-linearity between the data and the target.
 #
 # However, we will show that the hyperparameter space contains several local
-# minima. It will highlights the importance of initial hyperparameter values.
+# minima. It will highlight the importance of initial hyperparameter values.
 #
 # We will create a model using a kernel with a high noise level and a large
 # length scale, which will explain all variations in the data by noise.

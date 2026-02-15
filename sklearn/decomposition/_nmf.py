@@ -251,7 +251,7 @@ def _initialize_nmf(X, n_components, init=None, eps=1e-6, random_state=None):
             defaults to `nndsvda` instead of `nndsvd`.
 
     eps : float, default=1e-6
-        Truncate all values less then this in output to zero.
+        Truncate all values less than this in output to zero.
 
     random_state : int, RandomState instance or None, default=None
         Used when ``init`` == 'nndsvdar' or 'random'. Pass an int for

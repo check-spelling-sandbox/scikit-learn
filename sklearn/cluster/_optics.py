@@ -833,7 +833,7 @@ def cluster_optics_xi(
 
     min_samples : int > 1 or float between 0 and 1
         The same as the min_samples given to OPTICS. Up and down steep regions
-        can't have more then ``min_samples`` consecutive non-steep points.
+        can't have more than ``min_samples`` consecutive non-steep points.
         Expressed as an absolute number or a fraction of the number of samples
         (rounded to be at least 2).
 
@@ -947,7 +947,7 @@ def _extend_region(steep_point, xward_point, start, min_samples):
 
     min_samples : int
        The same as the min_samples given to OPTICS. Up and down steep
-       regions can't have more then ``min_samples`` consecutive non-steep
+       regions can't have more than ``min_samples`` consecutive non-steep
        points.
 
     Returns
@@ -1048,7 +1048,7 @@ def _xi_cluster(
 
     min_samples : int > 1
         The same as the min_samples given to OPTICS. Up and down steep regions
-        can't have more then ``min_samples`` consecutive non-steep points.
+        can't have more than ``min_samples`` consecutive non-steep points.
 
     min_cluster_size : int > 1
         Minimum number of samples in an OPTICS cluster.
