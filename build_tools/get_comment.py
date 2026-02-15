@@ -207,7 +207,7 @@ def get_message(log_file, repo_str, pr_number, sha, run_id, details, versions):
         + branch_not_updated
         + "This PR is introducing linting issues. Here's a summary of the issues. "
         + "Note that you can avoid having linting issues by enabling `pre-commit` "
-        + "hooks. Instructions to enable them can be found [here]("
+        + "hooks. See [instructions to enable them]("
         + "https://scikit-learn.org/dev/developers/development_setup.html#set-up-pre-commit)"
         + ".\n\n"
         + "You can see the details of the linting issues under the `lint` job [here]"
