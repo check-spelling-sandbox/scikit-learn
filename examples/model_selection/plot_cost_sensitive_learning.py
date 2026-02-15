@@ -415,7 +415,7 @@ title = "Tuned GBDT model without refitting and using the entire dataset"
 plot_roc_pr_curves(model, tuned_model, title=title)
 
 # %%
-# We observe the that the optimum cut-off point is different from the one found
+# We observe that the optimum cut-off point is different from the one found
 # in the previous experiment. If we look at the right-hand side plot, we
 # observe that the business gain has large plateau of near-optimal 0 gain for a
 # large span of decision thresholds. This behavior is symptomatic of an
