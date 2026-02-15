@@ -57,7 +57,7 @@ def l1_min_c(X, y, *, loss="squared_hinge", fit_intercept=True, intercept_scalin
     intercept_scaling : float, default=1.0
         When fit_intercept is True, instance vector x becomes
         [x, intercept_scaling],
-        i.e. a "synthetic" feature with constant value equals to
+        i.e. a "synthetic" feature with constant value equal to
         intercept_scaling is appended to the instance vector.
         It must match the fit() method parameter.
 
