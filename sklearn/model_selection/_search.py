@@ -944,7 +944,7 @@ class BaseSearchCV(MetaEstimatorMixin, BaseEstimator, metaclass=ABCMeta):
             does not apply to `groups` which is passed to the splitter configured
             via the `cv` parameter of the constructor. Thus, `groups` is used
             *to perform the split* and determines which samples are
-            assigned to the each side of the a split.
+            assigned to the each side of the split.
 
         Returns
         -------
