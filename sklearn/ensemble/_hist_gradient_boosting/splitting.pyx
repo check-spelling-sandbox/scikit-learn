@@ -1102,7 +1102,7 @@ cdef inline Y_DTYPE_C _split_gain(
     """Loss reduction
 
     Compute the reduction in loss after taking a split, compared to keeping
-    the node a leaf of the tree.
+    the node as a leaf of the tree.
 
     See Equation 7 of:
     :arxiv:`T. Chen, C. Guestrin, (2016) XGBoost: A Scalable Tree Boosting System,
