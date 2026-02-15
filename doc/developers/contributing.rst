@@ -1572,7 +1572,7 @@ make this task easier and faster (in no particular order).
   Sometimes, only a very small portion of the code is doing the actual job.
   For example looking at the :meth:`~linear_model.LinearRegression.fit` method of
   :class:`~linear_model.LinearRegression`, what you're looking for
-  might just be the call the :func:`scipy.linalg.lstsq`, but it is buried into
+  might just be the call to the :func:`scipy.linalg.lstsq`, but it is buried into
   multiple lines of input checking and the handling of different kinds of
   parameters.
 - Due to the use of `Inheritance
