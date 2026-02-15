@@ -719,7 +719,7 @@ def datasets_column_names():
             "relaxing.calm",
             "quiet.still",
             "sad.lonely",
-            "angry.aggresive",
+            "angry.aggressive",
         ],
         1119: [
             "age",
