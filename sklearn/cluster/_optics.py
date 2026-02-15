@@ -1088,7 +1088,7 @@ def _xi_cluster(
         upward = ratio < 1
 
     # the following loop is almost exactly as Figure 19 of the paper.
-    # it jumps over the areas which are not either steep down or up areas
+    # it jumps over the areas which are not either steep up or down areas
     for steep_index in iter(np.flatnonzero(steep_upward | steep_downward)):
         # just continue if steep_index has been a part of a discovered xward
         # area.

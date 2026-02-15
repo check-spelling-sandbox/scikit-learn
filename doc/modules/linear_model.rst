@@ -1711,7 +1711,7 @@ The :class:`HuberRegressor` differs from using :class:`SGDRegressor` with loss s
 in the following ways.
 
 - :class:`HuberRegressor` is scaling invariant. Once ``epsilon`` is set, scaling ``X`` and ``y``
-  down or up by different values would produce the same robustness to outliers as before.
+  up or down by different values would produce the same robustness to outliers as before.
   as compared to :class:`SGDRegressor` where ``epsilon`` has to be set again when ``X`` and ``y`` are
   scaled.
 
