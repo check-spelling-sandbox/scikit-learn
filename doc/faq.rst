@@ -545,7 +545,7 @@ main since 0.2.10) and we contributed a `patch
 <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=60035>`_ to GCC's OpenMP runtime
 (not yet reviewed).
 
-But in the end the real culprit is Python's :mod:`multiprocessing` that does
+But in the end, the real culprit is Python's :mod:`multiprocessing` that does
 ``fork`` without ``exec`` to reduce the overhead of starting and using new
 Python processes for parallel computing. Unfortunately this is a violation of
 the POSIX standard and therefore some software editors like Apple refuse to
