@@ -456,7 +456,7 @@ for model_i, model_k in combinations(range(len(model_scores)), 2):
     differences = model_i_scores - model_k_scores
     t_stat, p_val = compute_corrected_ttest(differences, df, n_train, n_test)
     p_val *= n_comparisons  # implement Bonferroni correction
-    # Bonferroni can output p-values higher than 1
+    # Bonferroni can output p-values greater than 1
     p_val = 1 if p_val > 1 else p_val
     pairwise_t_test.append(
         [model_scores.index[model_i], model_scores.index[model_k], t_stat, p_val]
