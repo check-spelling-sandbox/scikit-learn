@@ -683,7 +683,7 @@ models, e.g. Mixture of Factor Analysers. One gets very different models (e.g.
 :class:`FastICA`) if non-Gaussian priors on the latent variables are assumed.
 
 Factor analysis *can* produce similar components (the columns of its loading
-matrix) to :class:`PCA`. However, one can not make any general statements
+matrix) to :class:`PCA`. However, one cannot make any general statements
 about these components (e.g. whether they are orthogonal):
 
 .. |pca_img3| image:: ../auto_examples/decomposition/images/sphx_glr_plot_faces_decomposition_002.png

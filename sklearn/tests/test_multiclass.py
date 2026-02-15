@@ -685,7 +685,7 @@ def test_ovo_ties():
 
 
 def test_ovo_ties2():
-    # test that ties can not only be won by the first two labels
+    # test that ties cannot only be won by the first two labels
     X = np.array([[1, 2], [2, 1], [-2, 1], [-2, -1]])
     y_ref = np.array([2, 0, 1, 2])
 

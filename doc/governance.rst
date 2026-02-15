@@ -180,7 +180,7 @@ directly to the governance model with a GitHub Pull Request. Logistically, an
 author can open a Draft Pull Request for feedback and follow up with a new
 revised Pull Request for voting. Once that author is happy with the state of the
 Pull Request, they can call for a vote on the public mailing list. During the
-one-month voting period, the Pull Request can not change. A Pull Request
+one-month voting period, the Pull Request cannot change. A Pull Request
 Approval will count as a positive vote, and a "Request Changes" review will
 count as a negative vote. If two-thirds of the cast votes are positive, then
 the governance model change is accepted.

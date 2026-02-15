@@ -550,7 +550,7 @@ class AdaBoostClassifier(
                 raise ValueError(
                     "BaseClassifier in AdaBoostClassifier "
                     "ensemble is worse than random, ensemble "
-                    "can not be fit."
+                    "cannot be fit."
                 )
             return None, None, None
 

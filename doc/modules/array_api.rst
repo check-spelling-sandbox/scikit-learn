@@ -324,7 +324,7 @@ To run these checks you need to install
 test environment. This allows you to run checks without having a
 GPU. To run the full set of checks you also need to install
 `PyTorch <https://pytorch.org/>`_, `CuPy <https://cupy.dev/>`_ and have
-a GPU. Checks that can not be executed or have missing dependencies will be
+a GPU. Checks that cannot be executed or have missing dependencies will be
 automatically skipped. Therefore it's important to run the tests with the
 `-v` flag to see which checks are skipped:
 

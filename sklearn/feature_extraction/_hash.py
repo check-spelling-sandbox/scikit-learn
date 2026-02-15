@@ -174,7 +174,7 @@ class FeatureHasher(TransformerMixin, BaseEstimator):
             first_raw_X = next(raw_X)
             if isinstance(first_raw_X, str):
                 raise ValueError(
-                    "Samples can not be a single string. The input must be an iterable"
+                    "Samples cannot be a single string. The input must be an iterable"
                     " over iterables of strings."
                 )
             raw_X_ = chain([first_raw_X], raw_X)

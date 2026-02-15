@@ -463,7 +463,7 @@ def _safe_set_output(estimator, *, transform=None):
         hasattr(estimator, "fit_transform") and transform is not None
     )
     if not set_output_for_transform:
-        # If estimator can not transform, then `set_output` does not need to be
+        # If estimator cannot transform, then `set_output` does not need to be
         # called.
         return
 

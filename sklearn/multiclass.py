@@ -808,7 +808,7 @@ class OneVsOneClassifier(MetaEstimatorMixin, ClassifierMixin, BaseEstimator):
         self.classes_ = np.unique(y)
         if len(self.classes_) == 1:
             raise ValueError(
-                "OneVsOneClassifier can not be fit when only one class is present."
+                "OneVsOneClassifier cannot be fit when only one class is present."
             )
         n_classes = self.classes_.shape[0]
         estimators_indices = list(
@@ -1202,7 +1202,7 @@ class OutputCodeClassifier(MetaEstimatorMixin, ClassifierMixin, BaseEstimator):
         n_classes = self.classes_.shape[0]
         if n_classes == 0:
             raise ValueError(
-                "OutputCodeClassifier can not be fit when no class is present."
+                "OutputCodeClassifier cannot be fit when no class is present."
             )
         n_estimators = int(n_classes * self.code_size)
 

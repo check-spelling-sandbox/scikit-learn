@@ -49,7 +49,7 @@ def test_feature_hasher_single_string(input_type):
 
     Non-regression test for gh-13199.
     """
-    msg = "Samples can not be a single string"
+    msg = "Samples cannot be a single string"
     raw_X = ["my_string", "another_string"]
     if input_type == "generator":
         raw_X = (x for x in raw_X)

@@ -58,7 +58,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 if args.junit_file is not None and args.tests_passed is not None:
-    print("--junit-file and --test-passed can not be set together")
+    print("--junit-file and --test-passed cannot be set together")
     sys.exit(1)
 
 if args.junit_file is None and args.tests_passed is None:

@@ -339,7 +339,7 @@ def test_one_hot_encoder_inverse_transform_raise_error_with_unknown(
     """
     enc = OneHotEncoder(sparse_output=sparse_).fit(X)
     msg = (
-        r"Samples \[(\d )*\d\] can not be inverted when drop=None and "
+        r"Samples \[(\d )*\d\] cannot be inverted when drop=None and "
         r"handle_unknown='error' because they contain all zeros"
     )
 
@@ -1415,7 +1415,7 @@ def test_encoders_string_categories(input_dtype, category_dtype, array_type):
 def test_mixed_string_bytes_categoricals():
     """Check that this mixture of predefined categories and X raises an error.
 
-    Categories defined as bytes can not easily be compared to data that is
+    Categories defined as bytes cannot easily be compared to data that is
     a string.
     """
     # data as unicode

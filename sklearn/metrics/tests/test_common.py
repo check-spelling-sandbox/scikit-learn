@@ -2487,7 +2487,7 @@ def test_metrics_dataframe_series(metric_name, df_lib_name):
     try:
         expected_metric = metric(y_pred.to_numpy(), y_true.to_numpy())
     except ValueError:
-        pytest.skip(f"{metric_name} can not deal with 1d inputs")
+        pytest.skip(f"{metric_name} cannot deal with 1d inputs")
 
     assert_allclose(metric(y_pred, y_true), expected_metric)
 

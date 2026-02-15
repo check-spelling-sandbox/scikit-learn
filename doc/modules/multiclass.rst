@@ -585,7 +585,7 @@ fitting one regressor per target. Since each target is represented by exactly
 one regressor it is possible to gain knowledge about the target by
 inspecting its corresponding regressor. As
 :class:`~sklearn.multioutput.MultiOutputRegressor` fits one regressor per
-target it can not take advantage of correlations between targets.
+target it cannot take advantage of correlations between targets.
 
 Below is an example of multioutput regression:
 

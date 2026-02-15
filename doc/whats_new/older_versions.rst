@@ -149,7 +149,7 @@ API changes summary
   the default gamma value was only computed the first time ``fit`` was called
   and then stored. It is now recalculated on every call to ``fit``.
 
-- All ``Base`` classes are now abstract meta classes so that they can not be
+- All ``Base`` classes are now abstract meta classes so that they cannot be
   instantiated.
 
 - :func:`cluster.ward_tree` now also returns the parent array. This is

@@ -1189,7 +1189,7 @@ class OneHotEncoder(_BaseEncoder):
                     if self._drop_idx_after_grouping is None:
                         all_zero_samples = np.flatnonzero(dropped)
                         raise ValueError(
-                            f"Samples {all_zero_samples} can not be inverted "
+                            f"Samples {all_zero_samples} cannot be inverted "
                             "when drop=None and handle_unknown='error' "
                             "because they contain all zeros"
                         )
