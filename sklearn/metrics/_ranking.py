@@ -1599,7 +1599,7 @@ def label_ranking_loss(y_true, y_score, *, sample_weight=None):
         false_at_reversed_rank = all_at_reversed_rank - true_at_reversed_rank
 
         # if the scores are ordered, it's possible to count the number of
-        # incorrectly ordered paires in linear time by cumulatively counting
+        # incorrectly ordered pairs in linear time by cumulatively counting
         # how many false labels of a given score have a score higher than the
         # accumulated true labels with lower score.
         loss[i] = np.dot(true_at_reversed_rank.cumsum(), false_at_reversed_rank)
