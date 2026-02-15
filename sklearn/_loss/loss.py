@@ -1306,7 +1306,7 @@ def _log1pexp(raw_prediction, raw_prediction_exp, xp):
     # `np.log1p(np.exp(x, dtype=np.float32))` from the special case under
     # consideration. Additionally the resulting values that are very close to
     # zero are set to -1.
-    # Consider as an example the case `x + exp(-x)`:
+    # Consider the case `x + exp(-x)`:
     #
     #     def x_plus_exp_negx(x):
     #         x = np.float32(x)
