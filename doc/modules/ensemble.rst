@@ -1188,7 +1188,7 @@ Totally Random Trees Embedding
 
 :class:`RandomTreesEmbedding` implements an unsupervised transformation of the
 data.  Using a forest of completely random trees, :class:`RandomTreesEmbedding`
-encodes the data by the indices of the leaves a data point ends up in.  This
+encodes the data by the indices of the leaves in which a data point ends up.  This
 index is then encoded in a one-of-K manner, leading to a high dimensional,
 sparse binary coding.
 This coding can be computed very efficiently and can then be used as a basis
