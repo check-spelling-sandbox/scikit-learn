@@ -1268,7 +1268,7 @@ def test_almost_constant_feature(tree_cls):
     # Make sure that almost constant features are discarded.
     random_state = check_random_state(0)
     X = random_state.rand(10, 2)
-    # FEATURE_TRESHOLD=1e-7 is defined in sklearn/tree/_partitioner.pxd but not
+    # FEATURE_THRESHOLD=1e-7 is defined in sklearn/tree/_partitioner.pxd but not
     # accessible from Python
     feature_threshold = 1e-7
     X[:, 0] *= feature_threshold  # almost constant feature
