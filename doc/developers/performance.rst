@@ -384,7 +384,7 @@ kcachegrind
 
 .. prompt:: bash $
 
-  # open my_file.py.callgrin with kcachegrind
+  # open my_file.py.callgrind with kcachegrind
   kcachegrind my_file.py.prof
 
 .. note::
