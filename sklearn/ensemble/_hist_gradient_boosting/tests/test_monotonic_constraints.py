@@ -70,7 +70,7 @@ def assert_children_values_monotonic(predictor, monotonic_cst):
     # be lower (resp greater) than right child if constraint is POS (resp.
     # NEG).
     # Note that this property alone isn't enough to ensure full monotonicity,
-    # since we also need to guanrantee that all the descendents of the left
+    # since we also need to guarantee that all the descendents of the left
     # child won't be greater (resp. lower) than the right child, or its
     # descendents. That's why we need to bound the predicted values (this is
     # tested in assert_children_values_bounded)
@@ -255,7 +255,7 @@ def test_predictions(global_random_seed, use_feature_names):
     # a constraint on the first feature only means that
     # x0 < x0' => f(x0, x1) < f(x0', x1)
     # while x1 stays constant.
-    # The constraint does not guanrantee that
+    # The constraint does not guarantee that
     # x0 < x0' => f(x0, x1) < f(x0', x1')
 
     # First non-categorical feature (POS)
