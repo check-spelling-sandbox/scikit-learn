@@ -167,7 +167,7 @@ class BayesianGaussianMixture(BaseMixture):
 
     covariance_prior : float or array-like, default=None
         The prior on the covariance distribution (Wishart).
-        If it is None, the emiprical covariance prior is initialized using the
+        If it is None, the empirical covariance prior is initialized using the
         covariance of X. The shape depends on `covariance_type`::
 
                 (n_features, n_features) if 'full',
