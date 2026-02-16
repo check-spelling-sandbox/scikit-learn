@@ -263,7 +263,7 @@ def test_omp_gram_dtype_match(data_type):
 
 
 def test_omp_gram_numerical_consistency():
-    # verify numericaly consistency among np.float32 and np.float64
+    # verify numerically consistency among np.float32 and np.float64
     coef_32 = orthogonal_mp_gram(
         G.astype(np.float32), Xy.astype(np.float32), n_nonzero_coefs=5
     )
