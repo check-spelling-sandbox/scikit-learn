@@ -1039,7 +1039,7 @@ class GraphicalLassoCV(BaseGraphicalLasso):
                     for train, test in cv.split(X, y, **routed_params.splitter.split)
                 )
 
-            # Little danse to transform the list in what we need
+            # Little dance to transform the list in what we need
             covs, _, scores = zip(*this_path)
             covs = zip(*covs)
             scores = zip(*scores)
