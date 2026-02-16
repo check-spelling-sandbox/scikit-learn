@@ -1677,7 +1677,7 @@ def test_gb_denominator_zero(global_random_seed):
     }
 
     clf = GradientBoostingClassifier(**params)
-    # _safe_devide would raise a RuntimeWarning
+    # _safe_divide would raise a RuntimeWarning
     with warnings.catch_warnings():
         warnings.simplefilter("error")
         clf.fit(X, y)
