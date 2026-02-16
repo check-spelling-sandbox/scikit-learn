@@ -695,7 +695,7 @@ def sparse_enet_coordinate_descent(
     cdef floating normalize_sum
     cdef unsigned int n_active = n_features
     cdef uint32_t[::1] active_set
-    # TODO: use binset insteaf of array of bools
+    # TODO: use binset instead of array of bools
     cdef uint8_t[::1] excluded_set
     cdef unsigned int i
     cdef unsigned int j
@@ -1108,7 +1108,7 @@ def enet_coordinate_descent_gram(
     cdef floating dual_norm_XtA
     cdef unsigned int n_active = n_features
     cdef uint32_t[::1] active_set
-    # TODO: use binset insteaf of array of bools
+    # TODO: use binset instead of array of bools
     cdef uint8_t[::1] excluded_set
     cdef unsigned int j
     cdef unsigned int n_iter = 0
