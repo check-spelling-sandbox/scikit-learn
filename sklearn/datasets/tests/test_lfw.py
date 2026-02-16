@@ -117,7 +117,7 @@ def test_load_fake_lfw_people(mock_data_home):
     expected_classes = ["Abdelatif Smith", "Abhati Kepler", "Onur Lopez"]
     assert_array_equal(lfw_people.target_names, expected_classes)
 
-    # It is possible to ask for the original data without any croping or color
+    # It is possible to ask for the original data without any cropping or color
     # conversion and not limit on the number of picture per person
     lfw_people = fetch_lfw_people(
         data_home=mock_data_home,
@@ -188,7 +188,7 @@ def test_load_fake_lfw_pairs(mock_data_home):
     expected_classes = ["Different persons", "Same person"]
     assert_array_equal(lfw_pairs_train.target_names, expected_classes)
 
-    # It is possible to ask for the original data without any croping or color
+    # It is possible to ask for the original data without any cropping or color
     # conversion
     lfw_pairs_train = fetch_lfw_pairs(
         data_home=mock_data_home,
