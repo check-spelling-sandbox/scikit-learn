@@ -125,7 +125,7 @@ class KNeighborsClassifier(KNeighborsMixin, ClassifierMixin, NeighborsBase):
     classes_ : array of shape (n_classes,)
         Class labels known to the classifier
 
-    effective_metric_ : str or callble
+    effective_metric_ : str or callable
         The distance metric used. It will be same as the `metric` parameter
         or a synonym of it, e.g. 'euclidean' if the `metric` parameter set to
         'minkowski' and `p` parameter set to 2.
