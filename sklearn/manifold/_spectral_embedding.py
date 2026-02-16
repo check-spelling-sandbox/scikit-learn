@@ -393,7 +393,7 @@ def _spectral_embedding(
         # random failures in LOBPCG and is not supported by the existing
         # theory:
         #     see https://doi.org/10.1007/s10208-015-9297-1
-        # Shift the Laplacian so its diagononal is not all ones. The shift
+        # Shift the Laplacian so its diagonal is not all ones. The shift
         # does change the eigenpairs however, so we'll feed the shifted
         # matrix to the solver and afterward set it back to the original.
         diag_shift = 1e-5 * sparse.eye(laplacian.shape[0])
