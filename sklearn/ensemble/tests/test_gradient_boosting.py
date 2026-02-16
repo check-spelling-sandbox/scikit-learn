@@ -662,7 +662,7 @@ def test_oob_attributes_error(GradientBoostingEstimator, oob_attribute):
         estimator.oob_attribute
 
 
-def test_oob_multilcass_iris():
+def test_oob_multiclass_iris():
     # Check OOB improvement on multi-class dataset.
     estimator = GradientBoostingClassifier(
         n_estimators=100, loss="log_loss", random_state=1, subsample=0.5
