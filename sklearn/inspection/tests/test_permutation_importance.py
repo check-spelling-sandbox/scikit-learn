@@ -239,7 +239,7 @@ def test_permutation_importance_mixed_types_pandas():
     assert np.all(result.importances_mean[-1] > result.importances_mean[:-1])
 
 
-def test_permutation_importance_linear_regresssion():
+def test_permutation_importance_linear_regression():
     X, y = make_regression(n_samples=500, n_features=10, random_state=0)
 
     X = scale(X)

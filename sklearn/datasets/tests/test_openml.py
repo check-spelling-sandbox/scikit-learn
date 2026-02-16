@@ -1548,7 +1548,7 @@ def test_open_openml_url_retry_on_network_error(monkeypatch):
 
 
 ###############################################################################
-# Non-regressiont tests
+# Non-regression tests
 
 
 @pytest.mark.parametrize("gzip_response", [True, False])

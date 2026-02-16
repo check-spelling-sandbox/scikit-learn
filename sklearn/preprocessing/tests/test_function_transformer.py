@@ -231,7 +231,7 @@ def test_function_transformer_support_all_numerical_dataframes_check_inverse_Tru
 def test_function_transformer_with_dataframe_and_check_inverse_True():
     """Check error is raised when check_inverse=True.
 
-    Non-regresion test for gh-25261.
+    Non-regression test for gh-25261.
     """
     pd = pytest.importorskip("pandas")
     transformer = FunctionTransformer(
