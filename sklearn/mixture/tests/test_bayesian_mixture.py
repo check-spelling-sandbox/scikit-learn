@@ -28,9 +28,9 @@ def test_log_dirichlet_norm():
     expected_norm = gammaln(np.sum(weight_concentration)) - np.sum(
         gammaln(weight_concentration)
     )
-    predected_norm = _log_dirichlet_norm(weight_concentration)
+    predicted_norm = _log_dirichlet_norm(weight_concentration)
 
-    assert_almost_equal(expected_norm, predected_norm)
+    assert_almost_equal(expected_norm, predicted_norm)
 
 
 def test_log_wishart_norm():
@@ -54,11 +54,11 @@ def test_log_wishart_norm():
                 0,
             )
         ).item()
-    predected_norm = _log_wishart_norm(
+    predicted_norm = _log_wishart_norm(
         degrees_of_freedom, log_det_precisions_chol, n_features
     )
 
-    assert_almost_equal(expected_norm, predected_norm)
+    assert_almost_equal(expected_norm, predicted_norm)
 
 
 def test_bayesian_mixture_weights_prior_initialisation():
