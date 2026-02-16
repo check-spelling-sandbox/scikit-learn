@@ -1008,7 +1008,7 @@ class StratifiedGroupKFold(GroupsConsumerMixin, _BaseKFold):
         #   interface.
         # - Added heuristic for assigning group to the least populated fold in
         #   cases when all other criteria are equal
-        # - Swtch from using python ``Counter`` to ``np.unique`` to get class
+        # - Switch from using python ``Counter`` to ``np.unique`` to get class
         #   distribution
         # - Added scikit-learn checks for input: checking that target is binary
         #   or multiclass, checking passed random state, checking that number
