@@ -181,7 +181,7 @@ def test_mincovdet_bias_on_normal(n_samples, n_features, global_random_seed):
     Non-regression test for:
     https://github.com/scikit-learn/scikit-learn/issues/23162
     """
-    threshold = 0.985  # threshold for variance underesitmation
+    threshold = 0.985  # threshold for variance underestimation
     rng = np.random.default_rng(global_random_seed)
     x = rng.normal(size=(n_features, n_samples))
     # Assume centered data, to reduce test complexity
