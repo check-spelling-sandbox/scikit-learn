@@ -822,7 +822,7 @@ class BaseSearchCV(MetaEstimatorMixin, BaseEstimator, metaclass=ABCMeta):
 
     @staticmethod
     def _select_best_index(refit, refit_metric, results):
-        """Select index of the best combination of hyperparemeters."""
+        """Select index of the best combination of hyperparameters."""
         if callable(refit):
             # If callable, refit is expected to return the index of the best
             # parameter set.
