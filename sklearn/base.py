@@ -995,7 +995,7 @@ class ClassNamePrefixFeaturesOutMixin:
     def get_feature_names_out(self, input_features=None):
         """Get output feature names for transformation.
 
-        The feature names out will prefixed by the lowercased class name. For
+        The feature names out will be prefixed by the lowercased class name. For
         example, if the transformer outputs 3 features, then the feature names
         out are: `["class_name0", "class_name1", "class_name2"]`.
 
