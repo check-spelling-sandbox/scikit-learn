@@ -914,7 +914,7 @@ def test_mle_simple_case():
     assert pca_skl.n_components_ == n_dim - 1
 
 
-def test_assess_dimesion_rank_one():
+def test_assess_dimension_rank_one():
     # Make sure assess_dimension works properly on a matrix of rank 1
     n_samples, n_features = 9, 6
     X = np.ones((n_samples, n_features))  # rank 1 matrix
