@@ -1,6 +1,6 @@
 import numpy as np
 
-# Y_DYTPE is the dtype to which the targets y are converted to. This is also
+# Y_DTYPE is the dtype to which the targets y are converted to. This is also
 # dtype for leaf values, gains, and sums of gradients / hessians. The gradients
 # and hessians arrays are stored as floats to avoid using too much memory.
 Y_DTYPE = np.float64
