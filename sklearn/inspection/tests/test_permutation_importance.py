@@ -376,7 +376,7 @@ def test_permutation_importance_large_memmaped_data(input_type):
     X, y = make_classification(
         n_samples=n_samples, n_features=n_features, random_state=0
     )
-    assert X.nbytes > 1e6  # trigger joblib memmaping
+    assert X.nbytes > 1e6  # trigger joblib memmapping
 
     X = _convert_container(X, input_type)
     clf = DummyClassifier(strategy="prior").fit(X, y)
