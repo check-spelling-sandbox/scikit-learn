@@ -5146,7 +5146,7 @@ def _check_generated_dataframe(
         A tuple containing the output data and feature names for the pandas case.
     is_supported_dataframe : callable
         A callable that takes a DataFrame instance as input and return whether or
-        E.g. `lambda X: isintance(X, pd.DataFrame)`.
+        E.g. `lambda X: isinstance(X, pd.DataFrame)`.
     create_dataframe : callable
         A callable taking as parameters `data`, `columns`, and `index` and returns
         a callable. Be aware that `index` can be ignored. For example, polars dataframes
@@ -5203,7 +5203,7 @@ def _check_set_output_transform_dataframe(
     is_supported_dataframe : callable
         A callable that takes a DataFrame instance as input and returns whether or
         not it is supported by the dataframe library.
-        E.g. `lambda X: isintance(X, pd.DataFrame)`.
+        E.g. `lambda X: isinstance(X, pd.DataFrame)`.
     create_dataframe : callable
         A callable taking as parameters `data`, `columns`, and `index` and returns
         a callable. Be aware that `index` can be ignored. For example, polars dataframes
