@@ -296,7 +296,7 @@ def _get_data_info_by_name(
     Returns
     -------
     first_dataset : json
-        json representation of the first dataset object that adhired to the
+        json representation of the first dataset object that adhered to the
         search criteria
 
     """
