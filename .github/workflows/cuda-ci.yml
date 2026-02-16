@@ -35,7 +35,7 @@ jobs:
     needs: [build_wheel]
     runs-on:
       group: cuda-gpu-runner-group
-    # Set this high enough so that the tests can comforatble run. We set a
+    # Set this high enough so that the tests can comfortable run. We set a
     # timeout to make abusing this workflow less attractive.
     timeout-minutes: 20
     name: Run Array API unit tests
