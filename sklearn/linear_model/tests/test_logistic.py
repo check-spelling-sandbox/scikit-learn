@@ -1621,13 +1621,13 @@ def test_warm_start_converge_LR(global_random_seed):
     assert_allclose(lr_no_ws_loss, lr_ws_loss, rtol=1e-5)
 
 
-def test_elastic_net_coeffs(global_random_seed):
+def test_elastic_net_coefs(global_random_seed):
     # make sure elasticnet penalty gives different coefficients from l1 and l2
     # with saga solver (l1_ratio different from 0 or 1)
     X, y = make_classification(random_state=global_random_seed)
 
     C = 2.0
-    coeffs = list()
+    coefs = list()
     for l1_ratio in (0.5, 1, 0):  # enet, l1, l2
         lr = LogisticRegression(
             C=C,
@@ -1638,14 +1638,14 @@ def test_elastic_net_coeffs(global_random_seed):
             max_iter=500,
         )
         lr.fit(X, y)
-        coeffs.append(lr.coef_)
+        coefs.append(lr.coef_)
 
-    elastic_net_coeffs, l1_coeffs, l2_coeffs = coeffs
+    elastic_net_coefs, l1_coefs, l2_coefs = coefs
 
-    # make sure coeffs differ by at least .1
-    assert not np.allclose(elastic_net_coeffs, l1_coeffs, rtol=0, atol=1e-3)
-    assert not np.allclose(elastic_net_coeffs, l2_coeffs, rtol=0, atol=1e-3)
-    assert not np.allclose(l2_coeffs, l1_coeffs, rtol=0, atol=1e-3)
+    # make sure coefs differ by at least .1
+    assert not np.allclose(elastic_net_coefs, l1_coefs, rtol=0, atol=1e-3)
+    assert not np.allclose(elastic_net_coefs, l2_coefs, rtol=0, atol=1e-3)
+    assert not np.allclose(l2_coefs, l1_coefs, rtol=0, atol=1e-3)
 
 
 # TODO(1.10): remove whole test with the removal of penalty

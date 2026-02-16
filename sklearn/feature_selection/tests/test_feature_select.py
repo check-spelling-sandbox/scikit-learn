@@ -100,20 +100,20 @@ def test_r_regression(center):
         n_samples=2000, n_features=20, n_informative=5, shuffle=False, random_state=0
     )
 
-    corr_coeffs = r_regression(X, y, center=center)
-    assert (-1 < corr_coeffs).all()
-    assert (corr_coeffs < 1).all()
+    corr_coefs = r_regression(X, y, center=center)
+    assert (-1 < corr_coefs).all()
+    assert (corr_coefs < 1).all()
 
     sparse_X = _convert_container(X, "sparse")
 
-    sparse_corr_coeffs = r_regression(sparse_X, y, center=center)
-    assert_allclose(sparse_corr_coeffs, corr_coeffs)
+    sparse_corr_coefs = r_regression(sparse_X, y, center=center)
+    assert_allclose(sparse_corr_coefs, corr_coefs)
 
     # Testing against numpy for reference
     Z = np.hstack((X, y[:, np.newaxis]))
     correlation_matrix = np.corrcoef(Z, rowvar=False)
-    np_corr_coeffs = correlation_matrix[:-1, -1]
-    assert_array_almost_equal(np_corr_coeffs, corr_coeffs, decimal=3)
+    np_corr_coefs = correlation_matrix[:-1, -1]
+    assert_array_almost_equal(np_corr_coefs, corr_coefs, decimal=3)
 
 
 @pytest.mark.parametrize("csr_container", CSR_CONTAINERS)

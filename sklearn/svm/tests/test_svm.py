@@ -669,7 +669,7 @@ def test_negative_weights_svc_leave_two_labels(
     [[1, -0.5, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1]],
     ids=["partial-mask-label-1", "partial-mask-label-2"],
 )
-def test_negative_weight_equal_coeffs(Estimator, sample_weight):
+def test_negative_weight_equal_coefs(Estimator, sample_weight):
     # model generates equal coefficients
     est = Estimator(kernel="linear")
     est.fit(X, Y, sample_weight=sample_weight)
