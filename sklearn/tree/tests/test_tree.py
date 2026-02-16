@@ -2767,7 +2767,7 @@ def test_regression_tree_missing_values_toy(Tree, X, criterion, global_random_se
 
     The regression targeted by this test was that we were not reinitializing the
     criterion when it comes to the number of missing values. Therefore, the value
-    of the critetion (i.e. MSE) was completely wrong.
+    of the criterion (i.e. MSE) was completely wrong.
 
     This test check that the MSE is null when there is a single sample in the leaf.
 
