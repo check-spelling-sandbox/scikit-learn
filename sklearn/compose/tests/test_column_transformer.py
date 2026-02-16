@@ -1649,7 +1649,7 @@ def test_column_transformer_reordered_column_names_remainder(
             tf.transform(X_array)
 
 
-def test_feature_name_validation_missing_columns_drop_passthough():
+def test_feature_name_validation_missing_columns_drop_passthrough():
     """Test the interaction between {'drop', 'passthrough'} and
     missing column names."""
     pd = pytest.importorskip("pandas")
@@ -1689,7 +1689,7 @@ def test_feature_names_in_():
     Column transformer deliberately does not check for column name consistency.
     It only checks that the non-dropped names seen in `fit` are seen
     in `transform`. This behavior is already tested in
-    `test_feature_name_validation_missing_columns_drop_passthough`"""
+    `test_feature_name_validation_missing_columns_drop_passthrough`"""
 
     pd = pytest.importorskip("pandas")
 
