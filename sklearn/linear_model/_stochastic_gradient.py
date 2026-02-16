@@ -181,7 +181,7 @@ class BaseSGD(SparseCoefMixin, BaseEstimator, metaclass=ABCMeta):
     def _get_l1_ratio(self):
         if self.l1_ratio is None:
             # plain_sgd expects a float. Any value is fine since at this point
-            # penalty can't be "elsaticnet" so l1_ratio is not used.
+            # penalty can't be "elasticnet" so l1_ratio is not used.
             return 0.0
         return self.l1_ratio
 
