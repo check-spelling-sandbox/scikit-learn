@@ -35,7 +35,7 @@ class FunctionTransformer(TransformerMixin, BaseEstimator):
     log of frequencies, doing custom scaling, etc.
 
     Note: If a lambda is used as the function, then the resulting
-    transformer will not be pickleable.
+    transformer will not be picklable.
 
     .. versionadded:: 0.17
 
