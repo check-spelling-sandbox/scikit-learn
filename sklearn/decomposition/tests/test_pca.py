@@ -188,7 +188,7 @@ def test_sparse_pca_solver_error(global_random_seed, svd_solver, sparse_containe
 
 
 @pytest.mark.parametrize("sparse_container", CSR_CONTAINERS + CSC_CONTAINERS)
-def test_sparse_pca_auto_arpack_singluar_values_consistency(
+def test_sparse_pca_auto_arpack_singular_values_consistency(
     global_random_seed, sparse_container
 ):
     """Check that "auto" and "arpack" solvers are equivalent for sparse inputs."""
