@@ -337,7 +337,7 @@ def test_precision_recall_prevalence_pos_label_reusable(pyplot, constructor_name
 
 def test_precision_recall_raise_no_prevalence(pyplot):
     # Check that raises correctly when plotting chance level with
-    # no prvelance_pos_label is provided
+    # no prevelance_pos_label is provided
     precision = np.array([1, 0.5, 0])
     recall = np.array([0, 0.5, 1])
     display = PrecisionRecallDisplay(precision, recall)
