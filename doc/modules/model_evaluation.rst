@@ -3121,7 +3121,7 @@ The right-hand side plot shows the residuals (i.e. the difference between the
 actual and the predicted values) vs. the predicted values.
 
 This plot makes it easier to visualize if the residuals follow and
-`homoscedastic or heteroschedastic
+`homoscedastic or heteroscedastic
 <https://en.wikipedia.org/wiki/Homoscedasticity_and_heteroscedasticity>`_
 distribution.
 
