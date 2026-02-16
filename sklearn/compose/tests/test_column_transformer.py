@@ -2448,7 +2448,7 @@ def test_remainder_set_output():
 
 
 def test_transform_pd_na():
-    """Check behavior when a tranformer's output contains pandas.NA
+    """Check behavior when a transformer's output contains pandas.NA
 
     It should raise an error unless the output config is set to 'pandas'.
     """
