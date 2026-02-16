@@ -120,8 +120,8 @@ def test_plot_partial_dependence(
 
     # two feature position
     ax = disp.axes_[0, 2]
-    coutour = disp.contours_[0, 2]
-    assert coutour.get_cmap().name == "jet"
+    contour = disp.contours_[0, 2]
+    assert contour.get_cmap().name == "jet"
     assert ax.get_xlabel() == diabetes.feature_names[0]
     assert ax.get_ylabel() == diabetes.feature_names[2]
 
