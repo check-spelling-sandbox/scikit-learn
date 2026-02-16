@@ -33,7 +33,7 @@ cdef class IntFloatDict:
         cdef int i
         cdef int size = values.size
         # Should check that sizes for keys and values are equal, and
-        # after should boundcheck(False)
+        # after should boundscheck(False)
         for i in range(size):
             self.my_map[keys[i]] = values[i]
 
