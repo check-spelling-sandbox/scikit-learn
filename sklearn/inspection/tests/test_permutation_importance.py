@@ -352,7 +352,7 @@ def test_permutation_importance_equivalence_array_dataframe(n_jobs, max_samples)
     imp_max = importance_array["importances"].max()
     assert imp_max - imp_min > 0.3
 
-    # Now check that importances computed on dataframe matche the values
+    # Now check that importances computed on dataframe match the values
     # of those computed on the array with the same data.
     importance_dataframe = permutation_importance(
         rf,
