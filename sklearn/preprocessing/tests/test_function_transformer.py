@@ -214,7 +214,7 @@ def test_function_transformer_raise_error_with_mixed_dtype(X_type):
         transformer.fit(data)
 
 
-def test_function_transformer_support_all_nummerical_dataframes_check_inverse_True():
+def test_function_transformer_support_all_numerical_dataframes_check_inverse_True():
     """Check support for dataframes with only numerical values."""
     pd = pytest.importorskip("pandas")
 

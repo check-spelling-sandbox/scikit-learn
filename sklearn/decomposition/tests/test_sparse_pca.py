@@ -217,7 +217,7 @@ def test_sparse_pca_dtype_match(SPCA, method, data_type, expected_type):
 @pytest.mark.parametrize("SPCA", (SparsePCA, MiniBatchSparsePCA))
 @pytest.mark.parametrize("method", ("lars", "cd"))
 def test_sparse_pca_numerical_consistency(SPCA, method, global_random_seed):
-    # Verify numericall consistency among np.float32 and np.float64
+    # Verify numerical consistency among np.float32 and np.float64
     n_samples, n_features, n_components = 20, 20, 5
     input_array = make_low_rank_matrix(
         n_samples=n_samples,
