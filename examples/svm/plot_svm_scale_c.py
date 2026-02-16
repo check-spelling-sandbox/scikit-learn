@@ -28,7 +28,7 @@ amount of regularization with `C`, there would be a different amount of samples
 between the main problem and the smaller problems within the folds of the cross
 validation.
 
-Since the loss function dependens on the amount of samples, the latter
+Since the loss function depends on the amount of samples, the latter
 influences the selected value of `C`. The question that arises is "How do we
 optimally adjust C to account for the different amount of training samples?"
 """
