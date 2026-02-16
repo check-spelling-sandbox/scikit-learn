@@ -189,7 +189,7 @@ cdef class ArgKmin{{name_suffix}}(BaseDistancesReduction{{name_suffix}}):
             intp_t idx
 
         # Sorting the main heaps portion associated to `X[X_start:X_end]`
-        # in ascending order w.r.t the distances.
+        # in ascending order w.r.t. the distances.
         for idx in range(X_end - X_start):
             simultaneous_sort(
                 self.heaps_r_distances_chunks[thread_num] + idx * self.k,
@@ -272,7 +272,7 @@ cdef class ArgKmin{{name_suffix}}(BaseDistancesReduction{{name_suffix}}):
                 free(self.heaps_r_distances_chunks[thread_num])
                 free(self.heaps_indices_chunks[thread_num])
 
-            # Sorting the main in ascending order w.r.t the distances.
+            # Sorting the main in ascending order w.r.t. the distances.
             # This is done in parallel sample-wise (no need for locks).
             for idx in prange(self.n_samples_X, schedule='static'):
                 simultaneous_sort(

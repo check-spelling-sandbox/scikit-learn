@@ -264,7 +264,7 @@ def assert_compatible_radius_results(
     accept neighbors rank swaps only if they are caused by small
     rounding errors on the distance computations.
 
-    Input arrays must be sorted w.r.t distances.
+    Input arrays must be sorted w.r.t. distances.
     """
     is_sorted = lambda a: np.all(a[:-1] <= a[1:])
 

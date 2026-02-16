@@ -1322,7 +1322,7 @@ class GridSearchCV(BaseSearchCV):
 
         Also for multiple metric evaluation, the attributes ``best_index_``,
         ``best_score_`` and ``best_params_`` will only be available if
-        ``refit`` is set and all of them will be determined w.r.t this specific
+        ``refit`` is set and all of them will be determined w.r.t. this specific
         scorer.
 
         See ``scoring`` parameter to know more about multiple metric
@@ -1711,7 +1711,7 @@ class RandomizedSearchCV(BaseSearchCV):
 
         Also for multiple metric evaluation, the attributes ``best_index_``,
         ``best_score_`` and ``best_params_`` will only be available if
-        ``refit`` is set and all of them will be determined w.r.t this specific
+        ``refit`` is set and all of them will be determined w.r.t. this specific
         scorer.
 
         See ``scoring`` parameter to know more about multiple metric

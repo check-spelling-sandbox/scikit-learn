@@ -66,10 +66,10 @@ cdef class HistogramBuilder:
         to define the shape of the histograms.
     gradients : ndarray, shape (n_samples,)
         The gradients of each training sample. Those are the gradients of the
-        loss w.r.t the predictions, evaluated at iteration i - 1.
+        loss w.r.t. the predictions, evaluated at iteration i - 1.
     hessians : ndarray, shape (n_samples,)
         The hessians of each training sample. Those are the hessians of the
-        loss w.r.t the predictions, evaluated at iteration i - 1.
+        loss w.r.t. the predictions, evaluated at iteration i - 1.
     hessians_are_constant : bool
         Whether hessians are constant.
     """

@@ -281,7 +281,7 @@ class BaseLoss:
         gradient_out=None,
         n_threads=1,
     ):
-        """Compute gradient of loss w.r.t raw_prediction for each input.
+        """Compute gradient of loss w.r.t. raw_prediction for each input.
 
         Parameters
         ----------
@@ -331,7 +331,7 @@ class BaseLoss:
         hessian_out=None,
         n_threads=1,
     ):
-        """Compute gradient and hessian of loss w.r.t raw_prediction.
+        """Compute gradient and hessian of loss w.r.t. raw_prediction.
 
         Parameters
         ----------

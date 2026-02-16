@@ -555,7 +555,7 @@ def test_nmf_multiplicative_update_sparse(csr_container):
         assert_allclose(H1, H2, atol=1e-7)
 
         # Compare with almost same beta_loss, since some values have a specific
-        # behavior, but the results should be continuous w.r.t beta_loss
+        # behavior, but the results should be continuous w.r.t. beta_loss
         beta_loss -= 1.0e-5
         W, H = W0.copy(), H0.copy()
         W3, H3, _ = non_negative_factorization(

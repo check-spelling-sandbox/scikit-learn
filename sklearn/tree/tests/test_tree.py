@@ -861,7 +861,7 @@ def test_min_impurity_decrease(TreeEstimator, criterion, global_random_seed):
 
             for node in range(tree.node_count):
                 # If current node is a not leaf node, check if the split was
-                # justified w.r.t the min_impurity_decrease
+                # justified w.r.t. the min_impurity_decrease
                 if tree.children_left[node] != TREE_LEAF:
                     left = tree.children_left[node]
                     right = tree.children_right[node]

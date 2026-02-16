@@ -282,7 +282,7 @@ cdef class RadiusNeighbors{{name_suffix}}(BaseDistancesReduction{{name_suffix}})
             # Their deletion is carried out automatically as the
             # implementation relies on shared pointers.
 
-            # Sort in parallel in ascending order w.r.t the distances if requested.
+            # Sort in parallel in ascending order w.r.t. the distances if requested.
             if self.sort_results:
                 for idx in prange(self.n_samples_X, schedule='static'):
                     simultaneous_sort(

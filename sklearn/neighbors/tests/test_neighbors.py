@@ -1712,7 +1712,7 @@ def test_neighbors_metrics(
         ball_tree_dst, ball_tree_idx = results["ball_tree"]
 
         # The returned distances are always in float64 regardless of the input dtype
-        # We need to adjust the tolerance w.r.t the input dtype
+        # We need to adjust the tolerance w.r.t. the input dtype
         rtol = 1e-7 if global_dtype == np.float64 else 1e-4
 
         assert_allclose(brute_dst, ball_tree_dst, rtol=rtol)

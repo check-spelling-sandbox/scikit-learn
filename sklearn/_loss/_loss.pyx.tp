@@ -917,7 +917,7 @@ cdef class CyLossFunction:
         floating_out[::1] gradient_out,         # OUT
         int n_threads=1
     ):
-        """Compute gradient of loss w.r.t raw_prediction for each input.
+        """Compute gradient of loss w.r.t. raw_prediction for each input.
 
         The gradient is written to `gradient_out` and no array is returned.
 
@@ -945,7 +945,7 @@ cdef class CyLossFunction:
         floating_out[::1] gradient_out,         # OUT
         int n_threads=1
     ):
-        """Compute loss and gradient of loss w.r.t raw_prediction.
+        """Compute loss and gradient of loss w.r.t. raw_prediction.
 
         The loss and gradient are written to `loss_out` and `gradient_out` and no arrays
         are returned.
@@ -977,7 +977,7 @@ cdef class CyLossFunction:
         floating_out[::1] hessian_out,          # OUT
         int n_threads=1
     ):
-        """Compute gradient and hessian of loss w.r.t raw_prediction.
+        """Compute gradient and hessian of loss w.r.t. raw_prediction.
 
         The gradient and hessian are written to `gradient_out` and `hessian_out` and no
         arrays are returned.

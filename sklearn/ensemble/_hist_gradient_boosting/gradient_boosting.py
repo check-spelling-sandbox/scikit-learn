@@ -787,7 +787,7 @@ class BaseHistGradientBoosting(BaseEstimator, ABC):
                     raw_predictions_val += self._baseline_prediction
 
                 if self.scoring == "loss":
-                    # we're going to compute scoring w.r.t the loss. As losses
+                    # we're going to compute scoring w.r.t. the loss. As losses
                     # take raw predictions as input (unlike the scorers), we
                     # can optimize a bit and avoid repeating computing the
                     # predictions of the previous trees. We'll reuse
@@ -1651,7 +1651,7 @@ class HistGradientBoostingRegressor(RegressorMixin, BaseHistGradientBoosting):
           ``scorer(estimator, X, y)``. See :ref:`scoring_callable` for details.
         - `None`: the :ref:`coefficient of determination <r2_score>`
           (:math:`R^2`) is used.
-        - 'loss': early stopping is checked w.r.t the loss value.
+        - 'loss': early stopping is checked w.r.t. the loss value.
 
     validation_fraction : int or float or None, default=0.1
         Proportion (or absolute size) of training data to set aside as
@@ -2044,7 +2044,7 @@ class HistGradientBoostingClassifier(ClassifierMixin, BaseHistGradientBoosting):
         - callable: a scorer callable object (e.g., function) with signature
           ``scorer(estimator, X, y)``. See :ref:`scoring_callable` for details.
         - `None`: :ref:`accuracy <accuracy_score>` is used.
-        - 'loss': early stopping is checked w.r.t the loss value.
+        - 'loss': early stopping is checked w.r.t. the loss value.
 
     validation_fraction : int or float or None, default=0.1
         Proportion (or absolute size) of training data to set aside as
