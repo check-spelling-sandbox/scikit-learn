@@ -1840,7 +1840,7 @@ def check_scalar(
     """
 
     def type_name(t):
-        """Convert type into humman readable string."""
+        """Convert type into human readable string."""
         module = t.__module__
         qualname = t.__qualname__
         if module == "builtins":
