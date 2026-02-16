@@ -2356,7 +2356,7 @@ def check_transformer_preserve_dtypes(name, transformer_orig):
 
         for Xt, method in zip([X_trans1, X_trans2], ["fit_transform", "transform"]):
             if isinstance(Xt, tuple):
-                # cross-decompostion returns a tuple of (x_scores, y_scores)
+                # cross-decomposition returns a tuple of (x_scores, y_scores)
                 # when given y with fit_transform; only check the first element
                 Xt = Xt[0]
 
