@@ -338,7 +338,7 @@ def enet_coordinate_descent(
     cdef uint32_t* rand_r_state = &rand_r_state_seed
 
     if alpha == 0:
-        # No screeing without L1-penalty.
+        # No screening without L1-penalty.
         do_screening = False
 
     if do_screening:
@@ -709,7 +709,7 @@ def sparse_enet_coordinate_descent(
     cdef bint no_sample_weights = sample_weight is None
 
     if alpha == 0:
-        # No screeing without L1-penalty.
+        # No screening without L1-penalty.
         do_screening = False
 
     if do_screening:
@@ -1117,7 +1117,7 @@ def enet_coordinate_descent_gram(
     cdef uint32_t* rand_r_state = &rand_r_state_seed
 
     if alpha == 0:
-        # No screeing without L1-penalty.
+        # No screening without L1-penalty.
         do_screening = False
 
     if do_screening:
@@ -1421,7 +1421,7 @@ def enet_coordinate_descent_multi_task(
     cdef uint32_t* rand_r_state = &rand_r_state_seed
 
     if alpha == 0:
-        # No screeing without L1-penalty.
+        # No screening without L1-penalty.
         do_screening = False
 
     if do_screening:
