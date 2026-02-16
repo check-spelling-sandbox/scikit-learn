@@ -258,7 +258,7 @@ _ = ax.set_xlabel("speed (MB/s)")
 # the transformation, which in turn makes the interpretation of a model a more
 # complex task.
 #
-# The `FeatureHeasher` with `input_type="string"` is slightly faster than the
+# The `FeatureHasher` with `input_type="string"` is slightly faster than the
 # variant that works on frequency dict because it does not count repeated
 # tokens: each token is implicitly counted once, even if it was repeated.
 # Depending on the downstream machine learning task, it can be a limitation or
