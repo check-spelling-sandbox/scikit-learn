@@ -635,7 +635,7 @@ def test_standard_scaler_partial_fit():
 @pytest.mark.parametrize("sparse_container", CSC_CONTAINERS + CSR_CONTAINERS)
 def test_standard_scaler_partial_fit_numerical_stability(sparse_container):
     # Test if the incremental computation introduces significative errors
-    # for large datasets with values of large magniture
+    # for large datasets with values of large magnitude
     rng = np.random.RandomState(0)
     n_features = 2
     n_samples = 100

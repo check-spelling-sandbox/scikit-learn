@@ -363,7 +363,7 @@ _ = ax.set_title("RobustScaler with varying n_neighbors\non forestcover dataset"
 # We observe that the number of neighbors has a big impact on the performance of
 # the model. If one has access to (at least some) ground truth labels, it is
 # then important to tune `n_neighbors` accordingly. A convenient way to do so is
-# to explore values for `n_neighbors` of the order of magnitud of the expected
+# to explore values for `n_neighbors` of the order of magnitude of the expected
 # contamination.
 
 # %%
