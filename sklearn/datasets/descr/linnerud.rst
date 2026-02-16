@@ -1,6 +1,6 @@
-.. _linnerrud_dataset:
+.. _linnerud_dataset:
 
-Linnerrud dataset
+Linnerud dataset
 -----------------
 
 **Data Set Characteristics:**

@@ -1183,7 +1183,7 @@ def load_linnerud(*, return_X_y=False, as_frame=False):
     Targets          integer
     ==============   ============================
 
-    Read more in the :ref:`User Guide <linnerrud_dataset>`.
+    Read more in the :ref:`User Guide <linnerud_dataset>`.
 
     Parameters
     ----------
