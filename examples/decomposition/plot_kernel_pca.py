@@ -152,7 +152,7 @@ _ = kernel_pca_back_proj_ax.set_title("Reconstruction via KernelPCA")
 # Indeed, :meth:`~sklearn.decomposition.KernelPCA.inverse_transform` cannot
 # rely on an analytical back-projection and thus an exact reconstruction.
 # Instead, a :class:`~sklearn.kernel_ridge.KernelRidge` is internally trained
-# to learn a mapping from the kernalized PCA basis to the original feature
+# to learn a mapping from the kernelized PCA basis to the original feature
 # space. This method therefore comes with an approximation introducing small
 # differences when back projecting in the original feature space.
 #
