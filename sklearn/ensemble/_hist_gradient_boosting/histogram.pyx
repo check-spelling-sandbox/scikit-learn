@@ -315,7 +315,7 @@ cpdef void _subtract_histograms(
 ) noexcept nogil:  # OUT
     """compute hist_a = hist_a - hist_b"""
     # Note that subtraction of large sums of floating point numbers, as we have here,
-    # can exhibit catastrophic cancallation. This is in particular true for gradients
+    # can exhibit catastrophic cancellation. This is in particular true for gradients
     # as they can be positive and negative, while hessians are non-negative.
     # Remember that gradients and hessians are originally computed in
     # G_H_DTYPE_C = float32 precision. Therefore, if sum_gradients and sum_hessians are
