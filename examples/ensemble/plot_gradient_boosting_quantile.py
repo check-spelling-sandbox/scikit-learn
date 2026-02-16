@@ -124,7 +124,7 @@ plt.show()
 # because of its natural robustness to outliers.
 #
 # Also observe that the inductive bias of gradient boosting trees is
-# unfortunately preventing our 0.05 quantile to fully capture the sinoisoidal
+# unfortunately preventing our 0.05 quantile to fully capture the sinusoidal
 # shape of the signal, in particular around x=8. Tuning hyper-parameters can
 # reduce this effect as shown in the last part of this notebook.
 #
