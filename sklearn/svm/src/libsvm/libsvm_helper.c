@@ -31,7 +31,7 @@
  * this case. We create a temporary array temp that collects non-zero
  * elements and after we just memcpy that to the proper array.
  *
- * Special care must be taken with indinces, since libsvm indices start
+ * Special care must be taken with indices, since libsvm indices start
  * at 1 and not at 0.
  *
  * Strictly speaking, the C standard does not require that structs are
