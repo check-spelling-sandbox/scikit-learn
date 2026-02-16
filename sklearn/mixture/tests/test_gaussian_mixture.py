@@ -1080,7 +1080,7 @@ def test_regularisation():
 
 
 @pytest.mark.parametrize("covar_type", COVARIANCE_TYPE)
-def test_fitted_precision_covariance_concistency(covar_type, global_dtype):
+def test_fitted_precision_covariance_consistency(covar_type, global_dtype):
     rng = np.random.RandomState(0)
     rand_data = RandomData(rng, scale=7, dtype=global_dtype)
     n_components = rand_data.n_components
