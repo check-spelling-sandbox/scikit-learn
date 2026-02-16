@@ -92,7 +92,7 @@ _ = fig.suptitle("Raccoon face compressed using 3 bits and a uniform strategy")
 # %%
 # Qualitatively, we can spot some small regions where we see the effect of the
 # compression (e.g. leaves in the bottom right corner). But after all, the resulting
-# image is still looking good.
+# image still looks good.
 #
 # We observe that the distribution of pixels values have been mapped to 8
 # different values. We can check the correspondence between such values and the
