@@ -967,8 +967,8 @@ class BaggingClassifier(ClassifierMixin, BaseBagging):
         """
         _raise_for_params(params, self, "predict")
 
-        predicted_probabilitiy = self.predict_proba(X, **params)
-        return self.classes_.take((np.argmax(predicted_probabilitiy, axis=1)), axis=0)
+        predicted_probability = self.predict_proba(X, **params)
+        return self.classes_.take((np.argmax(predicted_probability, axis=1)), axis=0)
 
     def predict_proba(self, X, **params):
         """Predict class probabilities for X.
