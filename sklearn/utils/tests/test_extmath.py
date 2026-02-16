@@ -351,7 +351,7 @@ def test_randomized_svd_low_rank_with_noise():
     rank = 5
     k = 10
 
-    # generate a matrix X wity structure approximate rank `rank` and an
+    # generate a matrix X with structure approximate rank `rank` and an
     # important noisy component
     X = make_low_rank_matrix(
         n_samples=n_samples,
