@@ -362,7 +362,7 @@ def test_precision_recall_f_ignored_labels():
 
 
 def test_average_precision_score_non_binary_class():
-    """Test multiclass-multiouptut for `average_precision_score`."""
+    """Test multiclass-multioutput for `average_precision_score`."""
     y_true = np.array(
         [
             [2, 2, 1],
