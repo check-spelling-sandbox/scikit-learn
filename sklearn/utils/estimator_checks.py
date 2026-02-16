@@ -5150,7 +5150,7 @@ def _check_generated_dataframe(
     create_dataframe : callable
         A callable taking as parameters `data`, `columns`, and `index` and returns
         a callable. Be aware that `index` can be ignored. For example, polars dataframes
-        would ignore the idnex.
+        would ignore the index.
     assert_frame_equal : callable
         A callable taking 2 dataframes to compare if they are equal.
     """
