@@ -1029,7 +1029,7 @@ def _xi_cluster(
 ):
     """Automatically extract clusters according to the Xi-steep method.
 
-    This is rouphly an implementation of Figure 19 of the OPTICS paper.
+    This is roughly an implementation of Figure 19 of the OPTICS paper.
 
     Parameters
     ----------
