@@ -170,7 +170,7 @@ def test_asymmetric_error(quantile):
 
 @pytest.mark.parametrize("quantile", [0.2, 0.5, 0.8])
 def test_equivariance(quantile):
-    """Test equivariace of quantile regression.
+    """Test equivariance of quantile regression.
 
     See Koenker (2005) Quantile Regression, Chapter 2.2.3.
     """
