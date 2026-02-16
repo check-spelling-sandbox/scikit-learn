@@ -2652,7 +2652,7 @@ def test_logistic_regression_array_api_compliance(
     assert np.abs(lr_np.coef_).max() > 0.1
 
     predict_proba_np = lr_np.predict_proba(X_np)
-    preditct_log_proba_np = lr_np.predict_log_proba(X_np)
+    predict_log_proba_np = lr_np.predict_log_proba(X_np)
     prediction_np = lr_np.predict(X_np)
     # TODO: those tolerance levels seem quite high. Investigate further if we
     # can hunt down the numerical discrepancies more precisely.
@@ -2693,7 +2693,7 @@ def test_logistic_regression_array_api_compliance(
         predict_log_proba_xp = lr_xp.predict_log_proba(X_xp)
         assert_allclose(
             _convert_to_numpy(predict_log_proba_xp, xp=xp),
-            preditct_log_proba_np,
+            predict_log_proba_np,
             rtol=rtol,
             atol=atol,
         )

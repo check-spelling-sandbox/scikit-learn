@@ -310,7 +310,7 @@ def test_multi_output_classification_partial_fit_no_first_classes_exception():
 
 def test_multi_output_classification():
     # test if multi_target initializes correctly with base estimator and fit
-    # assert predictions work as expected for predict, prodict_proba and score
+    # assert predictions work as expected for predict, predict_proba and score
 
     forest = RandomForestClassifier(n_estimators=10, random_state=1)
     multi_target_forest = MultiOutputClassifier(forest)
