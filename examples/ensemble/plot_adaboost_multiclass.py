@@ -176,7 +176,7 @@ plt.legend(["AdaBoost", "DecisionTreeClassifier", "DummyClassifier"], loc=1)
 plt.show()
 
 # %%
-# The plot shows the missclassification error on the test set after each
+# The plot shows the misclassification error on the test set after each
 # boosting iteration. We see that the error of the boosted trees converges to an
 # error of around 0.3 after 50 iterations, indicating a significantly higher
 # accuracy compared to a single tree, as illustrated by the dashed line in the
