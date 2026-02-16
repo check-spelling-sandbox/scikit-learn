@@ -131,7 +131,7 @@ def _yield_api_checks(estimator):
 
     tags = get_tags(estimator)
     # This is commented out since it's the first check both
-    # `parametrize_with_checks` and `check_esitmator` do
+    # `parametrize_with_checks` and `check_estimator` do
     # anyway. But leaving it here as commented out to know
     # it's a part of the basic API.
     # yield check_estimator_cloneable
