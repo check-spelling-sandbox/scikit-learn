@@ -1067,7 +1067,7 @@ Changelog
   Blondel`_, `Olivier Grisel`_, Virgile Fritsch , Emmanuelle
   Gouillart]
 
-- Binded decision_function in classes that make use of liblinear_,
+- Bound decision_function in classes that make use of liblinear_,
   dense and sparse variants, like :class:`~svm.LinearSVC` or
   :class:`~linear_model.LogisticRegression` [`Fabian Pedregosa`_].
 
