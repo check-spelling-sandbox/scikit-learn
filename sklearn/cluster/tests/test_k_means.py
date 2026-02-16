@@ -738,7 +738,7 @@ def test_transform(Estimator, global_random_seed):
     # Check the transform method
     km = Estimator(n_clusters=n_clusters, random_state=global_random_seed).fit(X)
 
-    # Transorfming cluster_centers_ should return the pairwise distances
+    # Transforming cluster_centers_ should return the pairwise distances
     # between centers
     Xt = km.transform(km.cluster_centers_)
     assert_allclose(Xt, pairwise_distances(km.cluster_centers_))
