@@ -607,7 +607,7 @@ def test_isotonic_thresholds(increasing):
 
 def test_input_shape_validation():
     # Test from #15012
-    # Check that IsotonicRegression can handle 2darray with only 1 feature
+    # Check that IsotonicRegression can handle 2d array with only 1 feature
     X = np.arange(10)
     X_2d = X.reshape(-1, 1)
     y = np.arange(10)
