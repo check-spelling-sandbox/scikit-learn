@@ -2466,7 +2466,7 @@ def test_optimization_power_transformer(method, lmbda):
     assert_almost_equal(1, X_inv_trans.std(), decimal=1)
 
 
-def test_invserse_box_cox():
+def test_inverse_box_cox():
     # output nan if the input is invalid
     pt = PowerTransformer(method="box-cox", standardize=False)
     pt.lambdas_ = [0.5]
