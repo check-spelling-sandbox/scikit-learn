@@ -59,7 +59,7 @@ class _BaseNB(ClassifierMixin, BaseEstimator, metaclass=ABCMeta):
         Public methods predict, predict_proba, predict_log_proba, and
         predict_joint_log_proba pass the input through _check_X before handing it
         over to _joint_log_likelihood. The term "joint log likelihood" is used
-        interchangibly with "joint log probability".
+        interchangeably with "joint log probability".
         """
 
     @abstractmethod
