@@ -581,7 +581,7 @@ Lo...
     assert "..." not in full_repr
 
     # test with N_CHAR_MAX == number of non-blank characters - 10: the left and
-    # right side of the ellispsis are on different lines. In this case we
+    # right side of the ellipsis are on different lines. In this case we
     # want to expend the whole line of the right side
     expected = """
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
@@ -592,8 +592,8 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
     assert lr.__repr__(N_CHAR_MAX=n_nonblank - 10) == expected
 
     # test with N_CHAR_MAX == number of non-blank characters - 10: the left and
-    # right side of the ellispsis are on the same line. In this case we don't
-    # want to expend the whole line of the right side, just add the ellispsis
+    # right side of the ellipsis are on the same line. In this case we don't
+    # want to expend the whole line of the right side, just add the ellipsis
     # between the 2 sides.
     expected = """
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
@@ -604,7 +604,7 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
     assert lr.__repr__(N_CHAR_MAX=n_nonblank - 4) == expected
 
     # test with N_CHAR_MAX == number of non-blank characters - 2: the left and
-    # right side of the ellispsis are on the same line, but adding the ellipsis
+    # right side of the ellipsis are on the same line, but adding the ellipsis
     # would actually make the repr longer. So we don't add the ellipsis.
     expected = """
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
