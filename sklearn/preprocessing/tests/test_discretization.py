@@ -587,7 +587,7 @@ def test_kbinsdiscretizer_subsample_default():
         ("ordinal", [f"feat{col_id}" for col_id in range(3)]),
     ],
 )
-def test_kbinsdiscrtizer_get_feature_names_out(encode, expected_names):
+def test_kbinsdiscretizer_get_feature_names_out(encode, expected_names):
     """Check get_feature_names_out for different settings.
     Non-regression test for #22731
     """
