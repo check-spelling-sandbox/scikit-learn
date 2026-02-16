@@ -162,7 +162,7 @@ print(f"PLS r-squared {pls.score(X_test, y_test):.3f}")
 # %%
 # As a final remark, we note that PCR with 2 components performs as well as
 # PLS: this is because in this case, PCR was able to leverage the second
-# component which has the most preditive power on the target.
+# component which has the most predictive power on the target.
 
 pca_2 = make_pipeline(PCA(n_components=2), LinearRegression())
 pca_2.fit(X_train, y_train)
