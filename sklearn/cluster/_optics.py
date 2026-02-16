@@ -922,7 +922,7 @@ def cluster_optics_xi(
 def _extend_region(steep_point, xward_point, start, min_samples):
     """Extend the area until it's maximal.
 
-    It's the same function for both upward and downward reagions, depending on
+    It's the same function for both upward and downward regions, depending on
     the given input parameters. Assuming:
 
         - steep_{upward/downward}: bool array indicating whether a point is a
@@ -930,7 +930,7 @@ def _extend_region(steep_point, xward_point, start, min_samples):
         - upward/downward: bool array indicating whether a point is
           upward/downward;
 
-    To extend an upward reagion, ``steep_point=steep_upward`` and
+    To extend an upward region, ``steep_point=steep_upward`` and
     ``xward_point=downward`` are expected, and to extend a downward region,
     ``steep_point=steep_downward`` and ``xward_point=upward``.
 
