@@ -81,7 +81,7 @@ results_df[["params", "rank_test_score", "mean_test_score", "std_test_score"]]
 # To evaluate this, we need to conduct a statistical test.
 # Specifically, to contrast the performance of two models we should
 # statistically compare their AUC scores. There are 100 samples (AUC
-# scores) for each model as we repreated 10 times a 10-fold cross-validation.
+# scores) for each model as we repeated 10 times a 10-fold cross-validation.
 #
 # However, the scores of the models are not independent: all models are
 # evaluated on the **same** 100 partitions, increasing the correlation
