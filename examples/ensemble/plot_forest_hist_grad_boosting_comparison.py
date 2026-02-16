@@ -210,7 +210,7 @@ fig.update_layout(
 #
 # Overall, one should often observe that the Histogram-based gradient boosting
 # models uniformly dominate the Random Forest models in the "test score vs
-# training speed trade-off" (the HGBDT curve should be on the top left of the RF
+# training speed trade-off" (the HGBDT curve should be at the top left of the RF
 # curve, without ever crossing). The "test score vs prediction speed" trade-off
 # can also be more disputed, but it's most often favorable to HGBDT. It's always
 # a good idea to check both kinds of model (with hyper-parameter tuning) and
