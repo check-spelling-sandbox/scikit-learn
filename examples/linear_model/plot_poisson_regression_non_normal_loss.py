@@ -553,7 +553,7 @@ ax.legend(loc="upper left")
 # The linear models assume no interactions between the input variables which
 # likely causes under-fitting. Inserting a polynomial feature extractor
 # (:func:`~sklearn.preprocessing.PolynomialFeatures`) indeed increases their
-# discrimative power by 2 points of Gini index. In particular it improves the
+# discriminative power by 2 points of Gini index. In particular it improves the
 # ability of the models to identify the top 5% riskiest profiles.
 #
 # Main takeaways
